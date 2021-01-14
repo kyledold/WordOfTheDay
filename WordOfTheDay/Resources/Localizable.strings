@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  WordOfTheDay
+
+  Created by Kyle Dold on 14/01/2021.
+  
+*/
+
+"app.title" = "Contributions";
+"app.version" = "Version %@";
+"settings.row.feedback.title" = "Feedback";
+"settings.row.feedback.subtitle" = "kdold02@gmail.com";
+"settings.row.open.source.title" = "Open Source";
+"settings.row.open.source.subtitle" = "Feel free to contribute!";
