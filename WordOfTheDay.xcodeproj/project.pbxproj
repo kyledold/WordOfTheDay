@@ -13,6 +13,9 @@
 		D1022FA925B3594F00C1AD0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1022FA825B3594F00C1AD0C /* Constants.swift */; };
 		D1022FAF25B3597800C1AD0C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1022FAE25B3597800C1AD0C /* API.swift */; };
 		D1022FB625B359F300C1AD0C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D1022FB525B359F300C1AD0C /* Alamofire */; };
+		D1022FBA25B35B4600C1AD0C /* WordOfTheDayDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1022FB925B35B4600C1AD0C /* WordOfTheDayDTO.swift */; };
+		D1022FBE25B35C3100C1AD0C /* DefinitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1022FBD25B35C3100C1AD0C /* DefinitionDTO.swift */; };
+		D1022FC225B35C5100C1AD0C /* ExampleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1022FC125B35C5100C1AD0C /* ExampleDTO.swift */; };
 		D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */; };
 		D1B1350D25B0B73E00B75A8B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350C25B0B73E00B75A8B /* SettingsView.swift */; };
 		D1B1350F25B0B74300B75A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1350E25B0B74300B75A8B /* Assets.xcassets */; };
@@ -81,6 +84,9 @@
 		D1022F9125B358DA00C1AD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1022FA825B3594F00C1AD0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D1022FAE25B3597800C1AD0C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D1022FB925B35B4600C1AD0C /* WordOfTheDayDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayDTO.swift; sourceTree = "<group>"; };
+		D1022FBD25B35C3100C1AD0C /* DefinitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionDTO.swift; sourceTree = "<group>"; };
+		D1022FC125B35C5100C1AD0C /* ExampleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDTO.swift; sourceTree = "<group>"; };
 		D1B1350725B0B73E00B75A8B /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayApp.swift; sourceTree = "<group>"; };
 		D1B1350C25B0B73E00B75A8B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -163,6 +169,9 @@
 		D1022FAC25B3595900C1AD0C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D1022FB925B35B4600C1AD0C /* WordOfTheDayDTO.swift */,
+				D1022FBD25B35C3100C1AD0C /* DefinitionDTO.swift */,
+				D1022FC125B35C5100C1AD0C /* ExampleDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -437,7 +446,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1022FAF25B3597800C1AD0C /* API.swift in Sources */,
+				D1022FC225B35C5100C1AD0C /* ExampleDTO.swift in Sources */,
 				D1022FA925B3594F00C1AD0C /* Constants.swift in Sources */,
+				D1022FBE25B35C3100C1AD0C /* DefinitionDTO.swift in Sources */,
+				D1022FBA25B35B4600C1AD0C /* WordOfTheDayDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
