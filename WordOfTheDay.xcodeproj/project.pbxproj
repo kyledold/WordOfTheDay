@@ -24,6 +24,7 @@
 		D1D5029225B2061A00F5EE51 /* WordOfTheDayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */; };
 		D1D5029D25B2066700F5EE51 /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */; };
 		D1D502A225B2066F00F5EE51 /* WordOfTheDayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */; };
+		D1D502AA25B3502100F5EE51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1D502A925B3502100F5EE51 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayWidgetProvider.swift; sourceTree = "<group>"; };
 		D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayEntryView.swift; sourceTree = "<group>"; };
 		D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
+		D1D502A925B3502100F5EE51 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 				D1D5026F25B2051F00F5EE51 /* WordOfTheDayWidget.intentdefinition */,
 				D1D5027025B2052200F5EE51 /* Assets.xcassets */,
 				D1D5027225B2052200F5EE51 /* Info.plist */,
+				D1D502A925B3502100F5EE51 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D5027125B2052200F5EE51 /* Assets.xcassets in Resources */,
+				D1D502AA25B3502100F5EE51 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

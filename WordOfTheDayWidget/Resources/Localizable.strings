@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  WordOfTheDay
+
+  Created by Kyle Dold on 16/01/2021.
+  
+*/
+
+"widget.display_name" = "Word of the day";
+"widget.description" = "Random daily word with definition";
