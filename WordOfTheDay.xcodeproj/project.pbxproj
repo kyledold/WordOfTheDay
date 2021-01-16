@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1022F9225B358DA00C1AD0C /* NetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D1022F9025B358DA00C1AD0C /* NetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1022F9525B358DA00C1AD0C /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1022F8E25B358DA00C1AD0C /* NetworkKit.framework */; };
+		D1022F9625B358DA00C1AD0C /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1022F8E25B358DA00C1AD0C /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1022FA925B3594F00C1AD0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1022FA825B3594F00C1AD0C /* Constants.swift */; };
+		D1022FAF25B3597800C1AD0C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1022FAE25B3597800C1AD0C /* API.swift */; };
+		D1022FB625B359F300C1AD0C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D1022FB525B359F300C1AD0C /* Alamofire */; };
 		D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */; };
 		D1B1350D25B0B73E00B75A8B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350C25B0B73E00B75A8B /* SettingsView.swift */; };
 		D1B1350F25B0B74300B75A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1350E25B0B74300B75A8B /* Assets.xcassets */; };
@@ -28,6 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D1022F9325B358DA00C1AD0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1B134FF25B0B73E00B75A8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1022F8D25B358DA00C1AD0C;
+			remoteInfo = NetworkKit;
+		};
 		D1D5027525B2052200F5EE51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D1B134FF25B0B73E00B75A8B /* Project object */;
@@ -38,6 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D1022F9725B358DA00C1AD0C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1022F9625B358DA00C1AD0C /* NetworkKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1D5020A25B1FF9000F5EE51 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +76,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D1022F8E25B358DA00C1AD0C /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1022F9025B358DA00C1AD0C /* NetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkKit.h; sourceTree = "<group>"; };
+		D1022F9125B358DA00C1AD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1022FA825B3594F00C1AD0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D1022FAE25B3597800C1AD0C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		D1B1350725B0B73E00B75A8B /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayApp.swift; sourceTree = "<group>"; };
 		D1B1350C25B0B73E00B75A8B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -75,10 +104,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D1022F8B25B358DA00C1AD0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1022FB625B359F300C1AD0C /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1B1350425B0B73E00B75A8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1022F9525B358DA00C1AD0C /* NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,11 +132,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1022F8F25B358DA00C1AD0C /* NetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				D1022F9D25B358FA00C1AD0C /* Source */,
+				D1022F9E25B3590000C1AD0C /* Resources */,
+			);
+			path = NetworkKit;
+			sourceTree = "<group>";
+		};
+		D1022F9D25B358FA00C1AD0C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D1022FA825B3594F00C1AD0C /* Constants.swift */,
+				D1022FAD25B3596100C1AD0C /* API */,
+				D1022FAC25B3595900C1AD0C /* Models */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D1022F9E25B3590000C1AD0C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1022F9025B358DA00C1AD0C /* NetworkKit.h */,
+				D1022F9125B358DA00C1AD0C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D1022FAC25B3595900C1AD0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1022FAD25B3596100C1AD0C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D1022FAE25B3597800C1AD0C /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		D1B134FE25B0B73E00B75A8B = {
 			isa = PBXGroup;
 			children = (
 				D1B1350925B0B73E00B75A8B /* WordOfTheDay */,
 				D1D5026C25B2051F00F5EE51 /* WordOfTheDayWidget */,
+				D1022F8F25B358DA00C1AD0C /* NetworkKit */,
 				D1D501F625B1FF8A00F5EE51 /* Frameworks */,
 				D1B1350825B0B73E00B75A8B /* Products */,
 			);
@@ -109,6 +191,7 @@
 			children = (
 				D1B1350725B0B73E00B75A8B /* WordOfTheDay.app */,
 				D1D5026925B2051F00F5EE51 /* WordOfTheDayWidgetExtension.appex */,
+				D1022F8E25B358DA00C1AD0C /* NetworkKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,7 +285,39 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D1022F8925B358DA00C1AD0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1022F9225B358DA00C1AD0C /* NetworkKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		D1022F8D25B358DA00C1AD0C /* NetworkKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1022F9A25B358DA00C1AD0C /* Build configuration list for PBXNativeTarget "NetworkKit" */;
+			buildPhases = (
+				D1022F8925B358DA00C1AD0C /* Headers */,
+				D1022F8A25B358DA00C1AD0C /* Sources */,
+				D1022F8B25B358DA00C1AD0C /* Frameworks */,
+				D1022F8C25B358DA00C1AD0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkKit;
+			packageProductDependencies = (
+				D1022FB525B359F300C1AD0C /* Alamofire */,
+			);
+			productName = NetworkKit;
+			productReference = D1022F8E25B358DA00C1AD0C /* NetworkKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D1B1350625B0B73E00B75A8B /* WordOfTheDay */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1B1351625B0B74300B75A8B /* Build configuration list for PBXNativeTarget "WordOfTheDay" */;
@@ -211,13 +326,17 @@
 				D1B1350425B0B73E00B75A8B /* Frameworks */,
 				D1B1350525B0B73E00B75A8B /* Resources */,
 				D1D5020A25B1FF9000F5EE51 /* Embed App Extensions */,
+				D1022F9725B358DA00C1AD0C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				D1D5027625B2052200F5EE51 /* PBXTargetDependency */,
+				D1022F9425B358DA00C1AD0C /* PBXTargetDependency */,
 			);
 			name = WordOfTheDay;
+			packageProductDependencies = (
+			);
 			productName = WordOfTheDay;
 			productReference = D1B1350725B0B73E00B75A8B /* WordOfTheDay.app */;
 			productType = "com.apple.product-type.application";
@@ -248,6 +367,10 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					D1022F8D25B358DA00C1AD0C = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
 					D1B1350625B0B73E00B75A8B = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -265,17 +388,28 @@
 				Base,
 			);
 			mainGroup = D1B134FE25B0B73E00B75A8B;
+			packageReferences = (
+				D1022FB425B359F300C1AD0C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D1B1350825B0B73E00B75A8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D1B1350625B0B73E00B75A8B /* WordOfTheDay */,
 				D1D5026825B2051F00F5EE51 /* WordOfTheDayWidgetExtension */,
+				D1022F8D25B358DA00C1AD0C /* NetworkKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D1022F8C25B358DA00C1AD0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1B1350525B0B73E00B75A8B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +432,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D1022F8A25B358DA00C1AD0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1022FAF25B3597800C1AD0C /* API.swift in Sources */,
+				D1022FA925B3594F00C1AD0C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1B1350325B0B73E00B75A8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -325,6 +468,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D1022F9425B358DA00C1AD0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1022F8D25B358DA00C1AD0C /* NetworkKit */;
+			targetProxy = D1022F9325B358DA00C1AD0C /* PBXContainerItemProxy */;
+		};
 		D1D5027625B2052200F5EE51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D1D5026825B2051F00F5EE51 /* WordOfTheDayWidgetExtension */;
@@ -333,6 +481,63 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D1022F9825B358DA00C1AD0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NPHFRGDN5J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NetworkKit/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.NetworkKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D1022F9925B358DA00C1AD0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NPHFRGDN5J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NetworkKit/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.NetworkKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D1B1351425B0B74300B75A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -540,6 +745,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D1022F9A25B358DA00C1AD0C /* Build configuration list for PBXNativeTarget "NetworkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1022F9825B358DA00C1AD0C /* Debug */,
+				D1022F9925B358DA00C1AD0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1B1350225B0B73E00B75A8B /* Build configuration list for PBXProject "WordOfTheDay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -568,6 +782,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1022FB425B359F300C1AD0C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1022FB525B359F300C1AD0C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1022FB425B359F300C1AD0C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1B134FF25B0B73E00B75A8B /* Project object */;
 }
