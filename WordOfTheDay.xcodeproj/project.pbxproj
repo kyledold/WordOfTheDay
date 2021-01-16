@@ -23,8 +23,8 @@
 		D1D5028D25B2061700F5EE51 /* WordOfTheDayEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */; };
 		D1D5029225B2061A00F5EE51 /* WordOfTheDayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */; };
 		D1D5029D25B2066700F5EE51 /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */; };
-		D1D502A225B2066F00F5EE51 /* WordOfTheDayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */; };
 		D1D502AA25B3502100F5EE51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1D502A925B3502100F5EE51 /* Localizable.strings */; };
+		D1D502AE25B351B300F5EE51 /* WordOfTheDayEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D502AD25B351B300F5EE51 /* WordOfTheDayEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +71,7 @@
 		D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayEntryView.swift; sourceTree = "<group>"; };
 		D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
 		D1D502A925B3502100F5EE51 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D1D502AD25B351B300F5EE51 /* WordOfTheDayEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +182,9 @@
 			children = (
 				D1D5026D25B2051F00F5EE51 /* WordOfTheDayWidget.swift */,
 				D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */,
-				D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */,
 				D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */,
+				D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */,
+				D1D502AD25B351B300F5EE51 /* WordOfTheDayEntry.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -300,7 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1D502A225B2066F00F5EE51 /* WordOfTheDayWidgetProvider.swift in Sources */,
 				D1D5027425B2052200F5EE51 /* WordOfTheDayWidget.intentdefinition in Sources */,
 				D1B1350D25B0B73E00B75A8B /* SettingsView.swift in Sources */,
 				D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */,
@@ -316,6 +317,7 @@
 				D1D5027325B2052200F5EE51 /* WordOfTheDayWidget.intentdefinition in Sources */,
 				D1D5026E25B2051F00F5EE51 /* WordOfTheDayWidget.swift in Sources */,
 				D1D5028D25B2061700F5EE51 /* WordOfTheDayEntryView.swift in Sources */,
+				D1D502AE25B351B300F5EE51 /* WordOfTheDayEntry.swift in Sources */,
 				D1D5029D25B2066700F5EE51 /* WordOfTheDayViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,5 +20,6 @@ struct WordOfTheDayWidget: Widget {
         }
         .configurationDisplayName(LocalizedStringKey("widget.display_name"))
         .description(LocalizedStringKey("widget.description"))
+        .supportedFamilies([.systemMedium])
     }
 }

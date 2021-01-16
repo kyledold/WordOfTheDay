@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct WordOfTheDayWidgetEntryView : View {
+struct WordOfTheDayWidgetEntryView: View {
+    
     var entry: WordOfTheDayWidgetProvider.Entry
 
     var body: some View {
