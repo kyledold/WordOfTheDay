@@ -10,7 +10,6 @@
 		D1022F9225B358DA00C1AD0C /* NetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D1022F9025B358DA00C1AD0C /* NetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1022F9525B358DA00C1AD0C /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1022F8E25B358DA00C1AD0C /* NetworkKit.framework */; };
 		D1022F9625B358DA00C1AD0C /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1022F8E25B358DA00C1AD0C /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D1022FA925B3594F00C1AD0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1022FA825B3594F00C1AD0C /* Constants.swift */; };
 		D1022FAF25B3597800C1AD0C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1022FAE25B3597800C1AD0C /* API.swift */; };
 		D1022FB625B359F300C1AD0C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D1022FB525B359F300C1AD0C /* Alamofire */; };
 		D1022FBA25B35B4600C1AD0C /* WordOfTheDayDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1022FB925B35B4600C1AD0C /* WordOfTheDayDTO.swift */; };
@@ -82,7 +81,6 @@
 		D1022F8E25B358DA00C1AD0C /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1022F9025B358DA00C1AD0C /* NetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkKit.h; sourceTree = "<group>"; };
 		D1022F9125B358DA00C1AD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1022FA825B3594F00C1AD0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D1022FAE25B3597800C1AD0C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		D1022FB925B35B4600C1AD0C /* WordOfTheDayDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayDTO.swift; sourceTree = "<group>"; };
 		D1022FBD25B35C3100C1AD0C /* DefinitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionDTO.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 		D1022F9D25B358FA00C1AD0C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D1022FA825B3594F00C1AD0C /* Constants.swift */,
 				D1022FAD25B3596100C1AD0C /* API */,
 				D1022FAC25B3595900C1AD0C /* Models */,
 			);
@@ -447,7 +444,6 @@
 			files = (
 				D1022FAF25B3597800C1AD0C /* API.swift in Sources */,
 				D1022FC225B35C5100C1AD0C /* ExampleDTO.swift in Sources */,
-				D1022FA925B3594F00C1AD0C /* Constants.swift in Sources */,
 				D1022FBE25B35C3100C1AD0C /* DefinitionDTO.swift in Sources */,
 				D1022FBA25B35B4600C1AD0C /* WordOfTheDayDTO.swift in Sources */,
 			);
