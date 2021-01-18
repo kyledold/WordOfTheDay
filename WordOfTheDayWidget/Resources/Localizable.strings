@@ -7,4 +7,4 @@
 */
 
 "widget.display_name" = "Word of the day";
-"widget.description" = "Random daily word with definition";
+"widget.description" = "Daily word with definition and example";
