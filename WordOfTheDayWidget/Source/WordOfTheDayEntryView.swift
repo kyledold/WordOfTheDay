@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import InterfaceKit
 
 struct WordOfTheDayWidgetEntryView: View {
     
@@ -14,12 +15,11 @@ struct WordOfTheDayWidgetEntryView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text("Sample")
-                .foregroundColor(Color.black)
-                .bold()
-            Text("This is the sample definition").italic()
-                .foregroundColor(Color.black)
+                .modifier(TitleStyle())
+            Text("This is the sample definition")
+                .modifier(SubTitleStyle())
             Text("\"This is the sameple example usage\"")
-                .foregroundColor(Color.black)
+                .modifier(BodyStyle())
         }
     }
 }
