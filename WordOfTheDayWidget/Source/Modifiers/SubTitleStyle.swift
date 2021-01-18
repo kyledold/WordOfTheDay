@@ -11,7 +11,7 @@ public struct SubTitleStyle: ViewModifier {
     
     public func body(content: Content) -> some View {
         content
-            .font(.custom("Trirong-Light", size: 16))
+            .font(.custom("Trirong-Light", size: 18))
             .foregroundColor(.black)
     }
     

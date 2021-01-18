@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
-import InterfaceKit
 
 struct WordOfTheDayWidgetEntryView: View {
     
+    @Environment(\.widgetFamily) var widgetFamily
     var entry: WordOfTheDayWidgetProvider.Entry
 
     var body: some View {
@@ -18,8 +18,11 @@ struct WordOfTheDayWidgetEntryView: View {
                 .modifier(TitleStyle())
             Text("This is the sample definition")
                 .modifier(SubTitleStyle())
-            Text("\"This is the sameple example usage\"")
-                .modifier(BodyStyle())
+            
+            if case .systemLarge = widgetFamily {
+                Text("\"This is the sameple example usage\"")
+                    .modifier(BodyStyle())
+            }
         }
     }
 }

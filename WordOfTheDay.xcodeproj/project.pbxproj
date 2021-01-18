@@ -336,12 +336,12 @@
 		D1D5028125B2056B00F5EE51 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D102301525B6004200C1AD0C /* Modifiers */,
 				D1D5026D25B2051F00F5EE51 /* WordOfTheDayWidget.swift */,
 				D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */,
 				D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */,
 				D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */,
 				D1D502AD25B351B300F5EE51 /* WordOfTheDayEntry.swift */,
+				D102301525B6004200C1AD0C /* Modifiers */,
 			);
 			path = Source;
 			sourceTree = "<group>";

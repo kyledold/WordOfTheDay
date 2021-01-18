@@ -11,7 +11,7 @@ public struct BodyStyle: ViewModifier {
     
     public func body(content: Content) -> some View {
         content
-            .font(.custom("OpenSans-LightItalic", size: 14))
+            .font(.custom("OpenSans-LightItalic", size: 16))
             .foregroundColor(.black)
     }
     
