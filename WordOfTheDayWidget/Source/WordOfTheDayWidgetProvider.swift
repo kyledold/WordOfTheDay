@@ -11,6 +11,8 @@ import Intents
 
 struct WordOfTheDayWidgetProvider: IntentTimelineProvider {
     
+    private let calendar = Calendar.current
+    
     func placeholder(in context: Context) -> WordOfTheDayEntry {
         WordOfTheDayEntry(date: Date(), configuration: ConfigurationIntent())
     }
@@ -21,17 +23,13 @@ struct WordOfTheDayWidgetProvider: IntentTimelineProvider {
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<WordOfTheDayEntry>) -> ()) {
-        var entries: [WordOfTheDayEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
+        // Generate a timeline with one entry that refreshes at midnight.
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = WordOfTheDayEntry(date: entryDate, configuration: configuration)
-            entries.append(entry)
-        }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+        let startOfDay = calendar.startOfDay(for: currentDate)
+        let endOfDay = calendar.date(byAdding: .day, value: 1, to: startOfDay)!
+        
+        let entry = WordOfTheDayEntry(date: startOfDay, configuration: configuration)
+        let timeline = Timeline(entries: [entry], policy: .after(endOfDay))
         completion(timeline)
     }
 }
