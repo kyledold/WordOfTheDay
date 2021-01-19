@@ -8,7 +8,7 @@
 
 "app.title" = "Contributions";
 "app.version" = "Version %@";
-"settings.row.feedback.title" = "Feedback";
-"settings.row.feedback.subtitle" = "kdold02@gmail.com";
-"settings.row.open.source.title" = "Open Source";
-"settings.row.open.source.subtitle" = "Feel free to contribute!";
+"home.feedback.title" = "Feedback";
+"home.feedback.subtitle" = "kdold02@gmail.com";
+"home.open_source.title" = "Source code";
+"home.open_source.subtitle" = "Feel free to browse or contribute";
