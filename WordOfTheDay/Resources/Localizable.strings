@@ -6,8 +6,7 @@
   
 */
 
-"app.title" = "Contributions";
-"app.version" = "Version %@";
+"app.title" = "Word Of The Day";
 "home.feedback.title" = "Feedback";
 "home.feedback.subtitle" = "kdold02@gmail.com";
 "home.open_source.title" = "Source code";

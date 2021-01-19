@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum HomeItem {
+enum HomeItem: Int {
 
     case feedback, openSource
 

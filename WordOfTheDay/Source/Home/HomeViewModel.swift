@@ -11,13 +11,7 @@ class HomeViewModel: ObservableObject {
 
     @Published private(set) var items: [HomeItem] = [.feedback, .openSource]
 
-    var feedbackURL: URL {
-        URL(string: "mailto:kdold02@gmail.com")!
-    }
-
-    var openSourceURL: URL {
-        URL(string: "https://github.com/kyledold/WordOfTheDay")!
-    }
-
+    let feedbackURL = URL(string: "mailto:kdold02@gmail.com")!
+    let gitHubRepoURL = URL(string: "https://github.com/kyledold/WordOfTheDay")!
 }
 

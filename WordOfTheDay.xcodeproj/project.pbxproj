@@ -27,6 +27,12 @@
 		D102305525B603E600C1AD0C /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1022FEE25B5FF8900C1AD0C /* OpenSans-LightItalic.ttf */; };
 		D1732A9925B747C1009E55E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732A9825B747C1009E55E8 /* HomeViewModel.swift */; };
 		D1732A9D25B74841009E55E8 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732A9C25B74841009E55E8 /* HomeItem.swift */; };
+		D1732AA425B74B22009E55E8 /* HomeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AA325B74B22009E55E8 /* HomeRow.swift */; };
+		D1732AA925B74B7A009E55E8 /* TitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AA825B74B7A009E55E8 /* TitleStyle.swift */; };
+		D1732AAC25B74D05009E55E8 /* SubTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */; };
+		D1732AB325B74E18009E55E8 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AB225B74E18009E55E8 /* ImageExtension.swift */; };
+		D1732AB625B75066009E55E8 /* HeadingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AB525B75066009E55E8 /* HeadingStyle.swift */; };
+		D1732ABB25B750C0009E55E8 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1732ABA25B750C0009E55E8 /* Merriweather-Regular.ttf */; };
 		D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */; };
 		D1B1350D25B0B73E00B75A8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350C25B0B73E00B75A8B /* HomeView.swift */; };
 		D1B1350F25B0B74300B75A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1350E25B0B74300B75A8B /* Assets.xcassets */; };
@@ -125,6 +131,12 @@
 		D102301B25B6008300C1AD0C /* BodyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyStyle.swift; sourceTree = "<group>"; };
 		D1732A9825B747C1009E55E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D1732A9C25B74841009E55E8 /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
+		D1732AA325B74B22009E55E8 /* HomeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRow.swift; sourceTree = "<group>"; };
+		D1732AA825B74B7A009E55E8 /* TitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleStyle.swift; sourceTree = "<group>"; };
+		D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleStyle.swift; sourceTree = "<group>"; };
+		D1732AB225B74E18009E55E8 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		D1732AB525B75066009E55E8 /* HeadingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingStyle.swift; sourceTree = "<group>"; };
+		D1732ABA25B750C0009E55E8 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Merriweather-Regular.ttf"; path = "WordOfTheDayWidget/Resources/Fonts/Merriweather-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		D1B1350725B0B73E00B75A8B /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayApp.swift; sourceTree = "<group>"; };
 		D1B1350C25B0B73E00B75A8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -252,6 +264,35 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		D1732AA625B74B49009E55E8 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				D1732AB525B75066009E55E8 /* HeadingStyle.swift */,
+				D1732AA825B74B7A009E55E8 /* TitleStyle.swift */,
+				D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		D1732AA725B74B5C009E55E8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */,
+				D1B1351C25B0B84100B75A8B /* Extensions */,
+				D1B1351A25B0B81D00B75A8B /* Home */,
+				D1732AA625B74B49009E55E8 /* Modifiers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D1732AB925B750AD009E55E8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D1732ABA25B750C0009E55E8 /* Merriweather-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D1B134FE25B0B73E00B75A8B = {
 			isa = PBXGroup;
 			children = (
@@ -276,9 +317,7 @@
 		D1B1350925B0B73E00B75A8B /* WordOfTheDay */ = {
 			isa = PBXGroup;
 			children = (
-				D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */,
-				D1B1351C25B0B84100B75A8B /* Extensions */,
-				D1B1351A25B0B81D00B75A8B /* Settings */,
+				D1732AA725B74B5C009E55E8 /* Source */,
 				D1B1351B25B0B82A00B75A8B /* Resources */,
 				D1B1351025B0B74300B75A8B /* Preview Content */,
 			);
@@ -293,19 +332,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D1B1351A25B0B81D00B75A8B /* Settings */ = {
+		D1B1351A25B0B81D00B75A8B /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				D1B1350C25B0B73E00B75A8B /* HomeView.swift */,
 				D1732A9825B747C1009E55E8 /* HomeViewModel.swift */,
 				D1732A9C25B74841009E55E8 /* HomeItem.swift */,
+				D1732AA325B74B22009E55E8 /* HomeRow.swift */,
 			);
-			path = Settings;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		D1B1351B25B0B82A00B75A8B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D1732AB925B750AD009E55E8 /* Fonts */,
 				D1B1352F25B0BB1000B75A8B /* Localizable.strings */,
 				D1B1350E25B0B74300B75A8B /* Assets.xcassets */,
 				D1B1351325B0B74300B75A8B /* Info.plist */,
@@ -317,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				D1B1351D25B0B86900B75A8B /* BundleExtension.swift */,
+				D1732AB225B74E18009E55E8 /* ImageExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -499,6 +541,7 @@
 			files = (
 				D1B1351225B0B74300B75A8B /* Preview Assets.xcassets in Resources */,
 				D1B1353025B0BB1000B75A8B /* Localizable.strings in Resources */,
+				D1732ABB25B750C0009E55E8 /* Merriweather-Regular.ttf in Resources */,
 				D1B1350F25B0B74300B75A8B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,11 +578,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1732AA425B74B22009E55E8 /* HomeRow.swift in Sources */,
 				D1D5027425B2052200F5EE51 /* WordOfTheDayWidget.intentdefinition in Sources */,
 				D1732A9D25B74841009E55E8 /* HomeItem.swift in Sources */,
+				D1732AB325B74E18009E55E8 /* ImageExtension.swift in Sources */,
 				D1B1350D25B0B73E00B75A8B /* HomeView.swift in Sources */,
 				D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */,
+				D1732AAC25B74D05009E55E8 /* SubTitleStyle.swift in Sources */,
 				D1732A9925B747C1009E55E8 /* HomeViewModel.swift in Sources */,
+				D1732AA925B74B7A009E55E8 /* TitleStyle.swift in Sources */,
+				D1732AB625B75066009E55E8 /* HeadingStyle.swift in Sources */,
 				D1B1351E25B0B86900B75A8B /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
