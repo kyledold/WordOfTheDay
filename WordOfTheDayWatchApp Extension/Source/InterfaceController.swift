@@ -5,21 +5,11 @@
 //  Created by Kyle Dold on 20/01/2021.
 //
 
-import WatchKit
-import Foundation
+import SwiftUI
 
-class InterfaceController: WKInterfaceController {
-
-    override func awake(withContext context: Any?) {
-        // Configure interface objects here.
-    }
+class InterfaceController: WKHostingController<HomeView> {
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
+    override var body: HomeView {
+        HomeView()
     }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-    }
-
 }

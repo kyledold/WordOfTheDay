@@ -41,6 +41,9 @@
 		D1732C8D25B89B7F009E55E8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732C8C25B89B7F009E55E8 /* ComplicationController.swift */; };
 		D1732C8F25B89B82009E55E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1732C8E25B89B82009E55E8 /* Assets.xcassets */; };
 		D1732C9325B89B82009E55E8 /* WordOfTheDayWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D1732C7725B89B7C009E55E8 /* WordOfTheDayWatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D1732CAD25B89D25009E55E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732CAC25B89D25009E55E8 /* HomeView.swift */; };
+		D1732CB725B89DD2009E55E8 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1022F8E25B358DA00C1AD0C /* NetworkKit.framework */; };
+		D1732CB825B89DD2009E55E8 /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1022F8E25B358DA00C1AD0C /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */; };
 		D1B1350D25B0B73E00B75A8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350C25B0B73E00B75A8B /* HomeView.swift */; };
 		D1B1350F25B0B74300B75A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1350E25B0B74300B75A8B /* Assets.xcassets */; };
@@ -89,6 +92,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D1732C7625B89B7C009E55E8;
 			remoteInfo = WordOfTheDayWatchApp;
+		};
+		D1732CB925B89DD2009E55E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1B134FF25B0B73E00B75A8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1022F8D25B358DA00C1AD0C;
+			remoteInfo = NetworkKit;
 		};
 		D1D5027525B2052200F5EE51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -144,6 +154,17 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1732CBB25B89DD2009E55E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1732CB825B89DD2009E55E8 /* NetworkKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1D5020A25B1FF9000F5EE51 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,6 +212,7 @@
 		D1732C8C25B89B7F009E55E8 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		D1732C8E25B89B82009E55E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1732C9025B89B82009E55E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1732CAC25B89D25009E55E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D1B1350725B0B73E00B75A8B /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayApp.swift; sourceTree = "<group>"; };
 		D1B1350C25B0B73E00B75A8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -226,6 +248,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1732CB725B89DD2009E55E8 /* NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,8 +419,17 @@
 				D1732C8825B89B7F009E55E8 /* InterfaceController.swift */,
 				D1732C8A25B89B7F009E55E8 /* ExtensionDelegate.swift */,
 				D1732C8C25B89B7F009E55E8 /* ComplicationController.swift */,
+				D1732CAB25B89D17009E55E8 /* Views */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		D1732CAB25B89D17009E55E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1732CAC25B89D25009E55E8 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D1B134FE25B0B73E00B75A8B = {
@@ -576,10 +608,12 @@
 				D1732C7F25B89B7F009E55E8 /* Sources */,
 				D1732C8025B89B7F009E55E8 /* Frameworks */,
 				D1732C8125B89B7F009E55E8 /* Resources */,
+				D1732CBB25B89DD2009E55E8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D1732CBA25B89DD2009E55E8 /* PBXTargetDependency */,
 			);
 			name = "WordOfTheDayWatchApp Extension";
 			productName = "WordOfTheDayWatchApp Extension";
@@ -675,9 +709,9 @@
 			targets = (
 				D1B1350625B0B73E00B75A8B /* WordOfTheDay */,
 				D1D5026825B2051F00F5EE51 /* WordOfTheDayWidgetExtension */,
-				D1022F8D25B358DA00C1AD0C /* NetworkKit */,
 				D1732C7625B89B7C009E55E8 /* WordOfTheDayWatchApp */,
 				D1732C8225B89B7F009E55E8 /* WordOfTheDayWatchApp Extension */,
+				D1022F8D25B358DA00C1AD0C /* NetworkKit */,
 			);
 		};
 /* End PBXProject section */
@@ -751,6 +785,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1732C8B25B89B7F009E55E8 /* ExtensionDelegate.swift in Sources */,
+				D1732CAD25B89D25009E55E8 /* HomeView.swift in Sources */,
 				D1732C8925B89B7F009E55E8 /* InterfaceController.swift in Sources */,
 				D1732C8D25B89B7F009E55E8 /* ComplicationController.swift in Sources */,
 			);
@@ -812,6 +847,11 @@
 			isa = PBXTargetDependency;
 			target = D1732C7625B89B7C009E55E8 /* WordOfTheDayWatchApp */;
 			targetProxy = D1732C9125B89B82009E55E8 /* PBXContainerItemProxy */;
+		};
+		D1732CBA25B89DD2009E55E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1022F8D25B358DA00C1AD0C /* NetworkKit */;
+			targetProxy = D1732CB925B89DD2009E55E8 /* PBXContainerItemProxy */;
 		};
 		D1D5027625B2052200F5EE51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
