@@ -89,14 +89,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D1022F9025B358DA00C1AD0C /* NetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkKit.h; sourceTree = "<group>"; };
-		D1022F9125B358DA00C1AD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1022FAE25B3597800C1AD0C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		D1022FB925B35B4600C1AD0C /* WordOfTheDayDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayDTO.swift; sourceTree = "<group>"; };
-		D1022FBD25B35C3100C1AD0C /* DefinitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionDTO.swift; sourceTree = "<group>"; };
-		D1022FC125B35C5100C1AD0C /* ExampleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDTO.swift; sourceTree = "<group>"; };
-		D1022FCB25B4C80000C1AD0C /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
-		D1022FD925B4C9D100C1AD0C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		D1022FE525B5FEAA00C1AD0C /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
 		D1022FEE25B5FF8900C1AD0C /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		D1022FF425B5FFA700C1AD0C /* Trirong-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trirong-Light.ttf"; sourceTree = "<group>"; };
@@ -156,61 +148,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D1022F8F25B358DA00C1AD0C /* NetworkKit */ = {
-			isa = PBXGroup;
-			children = (
-				D1022F9D25B358FA00C1AD0C /* Source */,
-				D1022F9E25B3590000C1AD0C /* Resources */,
-			);
-			path = NetworkKit;
-			sourceTree = "<group>";
-		};
-		D1022F9D25B358FA00C1AD0C /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				D1022FAD25B3596100C1AD0C /* API */,
-				D1022FCA25B4C7EF00C1AD0C /* Extensions */,
-				D1022FAC25B3595900C1AD0C /* Models */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		D1022F9E25B3590000C1AD0C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D1022F9025B358DA00C1AD0C /* NetworkKit.h */,
-				D1022F9125B358DA00C1AD0C /* Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		D1022FAC25B3595900C1AD0C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				D1022FB925B35B4600C1AD0C /* WordOfTheDayDTO.swift */,
-				D1022FBD25B35C3100C1AD0C /* DefinitionDTO.swift */,
-				D1022FC125B35C5100C1AD0C /* ExampleDTO.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D1022FAD25B3596100C1AD0C /* API */ = {
-			isa = PBXGroup;
-			children = (
-				D1022FAE25B3597800C1AD0C /* API.swift */,
-				D1022FD925B4C9D100C1AD0C /* Endpoint.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		D1022FCA25B4C7EF00C1AD0C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				D1022FCB25B4C80000C1AD0C /* DateFormatterExtension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		D1022FE425B5FE7000C1AD0C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,7 +202,6 @@
 			children = (
 				D1B1350925B0B73E00B75A8B /* WordOfTheDay */,
 				D1D5026C25B2051F00F5EE51 /* WordOfTheDayWidget */,
-				D1022F8F25B358DA00C1AD0C /* NetworkKit */,
 				D1D501F625B1FF8A00F5EE51 /* Frameworks */,
 				D1B1350825B0B73E00B75A8B /* Products */,
 			);
