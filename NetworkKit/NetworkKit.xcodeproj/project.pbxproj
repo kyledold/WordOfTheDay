@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1DAAEF125BC3D5B00E648EB /* NetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D1DAAEEF25BC3D5B00E648EB /* NetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1DAAF0C25BC401800E648EB /* NetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D1DAAEEF25BC3D5B00E648EB /* NetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1DAAF1725BC40BA00E648EB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF1525BC40BA00E648EB /* API.swift */; };
+		D1DAAF1825BC40BA00E648EB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF1525BC40BA00E648EB /* API.swift */; };
+		D1DAAF1925BC40BA00E648EB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF1625BC40BA00E648EB /* Endpoint.swift */; };
+		D1DAAF1A25BC40BA00E648EB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF1625BC40BA00E648EB /* Endpoint.swift */; };
+		D1DAAF2325BC40C700E648EB /* ExampleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF1E25BC40C700E648EB /* ExampleDTO.swift */; };
+		D1DAAF2425BC40C700E648EB /* ExampleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF1E25BC40C700E648EB /* ExampleDTO.swift */; };
+		D1DAAF2525BC40C700E648EB /* WordOfTheDayDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF1F25BC40C700E648EB /* WordOfTheDayDTO.swift */; };
+		D1DAAF2625BC40C700E648EB /* WordOfTheDayDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF1F25BC40C700E648EB /* WordOfTheDayDTO.swift */; };
+		D1DAAF2725BC40C700E648EB /* DefinitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF2025BC40C700E648EB /* DefinitionDTO.swift */; };
+		D1DAAF2825BC40C700E648EB /* DefinitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF2025BC40C700E648EB /* DefinitionDTO.swift */; };
+		D1DAAF2925BC40C700E648EB /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF2225BC40C700E648EB /* DateFormatterExtension.swift */; };
+		D1DAAF2A25BC40C700E648EB /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF2225BC40C700E648EB /* DateFormatterExtension.swift */; };
+		D1DAAF5025BC431200E648EB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = D1DAAF4F25BC431200E648EB /* Alamofire */; };
+		D1DAAF5625BC437900E648EB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D1DAAF5525BC437900E648EB /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D1DAAEEC25BC3D5B00E648EB /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1DAAEEF25BC3D5B00E648EB /* NetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkKit.h; sourceTree = "<group>"; };
+		D1DAAEFB25BC3D7500E648EB /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1DAAF0625BC3E2600E648EB /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		D1DAAF0725BC3E2600E648EB /* Info-WatchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-WatchOS.plist"; sourceTree = "<group>"; };
+		D1DAAF1525BC40BA00E648EB /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D1DAAF1625BC40BA00E648EB /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D1DAAF1E25BC40C700E648EB /* ExampleDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDTO.swift; sourceTree = "<group>"; };
+		D1DAAF1F25BC40C700E648EB /* WordOfTheDayDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordOfTheDayDTO.swift; sourceTree = "<group>"; };
+		D1DAAF2025BC40C700E648EB /* DefinitionDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionDTO.swift; sourceTree = "<group>"; };
+		D1DAAF2225BC40C700E648EB /* DateFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1DAAEE925BC3D5B00E648EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DAAF5025BC431200E648EB /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1DAAEF825BC3D7500E648EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DAAF5625BC437900E648EB /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1DAAEE025BC3D1100E648EB = {
+			isa = PBXGroup;
+			children = (
+				D1DAAF1125BC403B00E648EB /* Source */,
+				D1DAAF0525BC3D9700E648EB /* Resources */,
+				D1DAAEED25BC3D5B00E648EB /* Products */,
+				D1DAAF5425BC437900E648EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1DAAEED25BC3D5B00E648EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAAEEC25BC3D5B00E648EB /* NetworkKit.framework */,
+				D1DAAEFB25BC3D7500E648EB /* NetworkKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1DAAF0525BC3D9700E648EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAAEEF25BC3D5B00E648EB /* NetworkKit.h */,
+				D1DAAF0625BC3E2600E648EB /* Info-iOS.plist */,
+				D1DAAF0725BC3E2600E648EB /* Info-WatchOS.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D1DAAF1125BC403B00E648EB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAAF1425BC40BA00E648EB /* API */,
+				D1DAAF2125BC40C700E648EB /* Extensions */,
+				D1DAAF1D25BC40C700E648EB /* Models */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D1DAAF1425BC40BA00E648EB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAAF1525BC40BA00E648EB /* API.swift */,
+				D1DAAF1625BC40BA00E648EB /* Endpoint.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D1DAAF1D25BC40C700E648EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAAF1E25BC40C700E648EB /* ExampleDTO.swift */,
+				D1DAAF1F25BC40C700E648EB /* WordOfTheDayDTO.swift */,
+				D1DAAF2025BC40C700E648EB /* DefinitionDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1DAAF2125BC40C700E648EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAAF2225BC40C700E648EB /* DateFormatterExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D1DAAF5425BC437900E648EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D1DAAEE725BC3D5B00E648EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DAAEF125BC3D5B00E648EB /* NetworkKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1DAAEF625BC3D7500E648EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DAAF0C25BC401800E648EB /* NetworkKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D1DAAEEB25BC3D5B00E648EB /* NetworkKit iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1DAAEF225BC3D5B00E648EB /* Build configuration list for PBXNativeTarget "NetworkKit iOS" */;
+			buildPhases = (
+				D1DAAEE725BC3D5B00E648EB /* Headers */,
+				D1DAAEE825BC3D5B00E648EB /* Sources */,
+				D1DAAEE925BC3D5B00E648EB /* Frameworks */,
+				D1DAAEEA25BC3D5B00E648EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NetworkKit iOS";
+			packageProductDependencies = (
+				D1DAAF4F25BC431200E648EB /* Alamofire */,
+			);
+			productName = "NetworkKit iOS";
+			productReference = D1DAAEEC25BC3D5B00E648EB /* NetworkKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1DAAEFA25BC3D7500E648EB /* NetworkKit WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1DAAF0025BC3D7500E648EB /* Build configuration list for PBXNativeTarget "NetworkKit WatchOS" */;
+			buildPhases = (
+				D1DAAEF625BC3D7500E648EB /* Headers */,
+				D1DAAEF725BC3D7500E648EB /* Sources */,
+				D1DAAEF825BC3D7500E648EB /* Frameworks */,
+				D1DAAEF925BC3D7500E648EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NetworkKit WatchOS";
+			packageProductDependencies = (
+				D1DAAF5525BC437900E648EB /* Alamofire */,
+			);
+			productName = "NetworkKit WatchOS";
+			productReference = D1DAAEFB25BC3D7500E648EB /* NetworkKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1DAAEE125BC3D1100E648EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					D1DAAEEB25BC3D5B00E648EB = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					D1DAAEFA25BC3D7500E648EB = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = D1DAAEE425BC3D1100E648EB /* Build configuration list for PBXProject "NetworkKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1DAAEE025BC3D1100E648EB;
+			packageReferences = (
+				D1DAAF4E25BC431200E648EB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = D1DAAEED25BC3D5B00E648EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1DAAEEB25BC3D5B00E648EB /* NetworkKit iOS */,
+				D1DAAEFA25BC3D7500E648EB /* NetworkKit WatchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1DAAEEA25BC3D5B00E648EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1DAAEF925BC3D7500E648EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1DAAEE825BC3D5B00E648EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DAAF2325BC40C700E648EB /* ExampleDTO.swift in Sources */,
+				D1DAAF2725BC40C700E648EB /* DefinitionDTO.swift in Sources */,
+				D1DAAF2925BC40C700E648EB /* DateFormatterExtension.swift in Sources */,
+				D1DAAF1925BC40BA00E648EB /* Endpoint.swift in Sources */,
+				D1DAAF1725BC40BA00E648EB /* API.swift in Sources */,
+				D1DAAF2525BC40C700E648EB /* WordOfTheDayDTO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1DAAEF725BC3D7500E648EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DAAF2425BC40C700E648EB /* ExampleDTO.swift in Sources */,
+				D1DAAF2825BC40C700E648EB /* DefinitionDTO.swift in Sources */,
+				D1DAAF2A25BC40C700E648EB /* DateFormatterExtension.swift in Sources */,
+				D1DAAF1A25BC40BA00E648EB /* Endpoint.swift in Sources */,
+				D1DAAF1825BC40BA00E648EB /* API.swift in Sources */,
+				D1DAAF2625BC40C700E648EB /* WordOfTheDayDTO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D1DAAEE525BC3D1100E648EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+			};
+			name = Debug;
+		};
+		D1DAAEE625BC3D1100E648EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+			};
+			name = Release;
+		};
+		D1DAAEF325BC3D5B00E648EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NPHFRGDN5J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Resources/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D1DAAEF425BC3D5B00E648EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NPHFRGDN5J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Resources/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D1DAAF0125BC3D7500E648EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NPHFRGDN5J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Resources/Info-WatchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		D1DAAF0225BC3D7500E648EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NPHFRGDN5J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Resources/Info-WatchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyledold.$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1DAAEE425BC3D1100E648EB /* Build configuration list for PBXProject "NetworkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1DAAEE525BC3D1100E648EB /* Debug */,
+				D1DAAEE625BC3D1100E648EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1DAAEF225BC3D5B00E648EB /* Build configuration list for PBXNativeTarget "NetworkKit iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1DAAEF325BC3D5B00E648EB /* Debug */,
+				D1DAAEF425BC3D5B00E648EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1DAAF0025BC3D7500E648EB /* Build configuration list for PBXNativeTarget "NetworkKit WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1DAAF0125BC3D7500E648EB /* Debug */,
+				D1DAAF0225BC3D7500E648EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1DAAF4E25BC431200E648EB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1DAAF4F25BC431200E648EB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1DAAF4E25BC431200E648EB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D1DAAF5525BC437900E648EB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1DAAF4E25BC431200E648EB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D1DAAEE125BC3D1100E648EB /* Project object */;
+}

@@ -4,4 +4,7 @@
    <FileRef
       location = "group:WordOfTheDay.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:NetworkKit/NetworkKit.xcodeproj">
+   </FileRef>
 </Workspace>
