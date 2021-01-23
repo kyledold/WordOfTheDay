@@ -39,8 +39,6 @@
 		D1D5029D25B2066700F5EE51 /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */; };
 		D1D502AA25B3502100F5EE51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1D502A925B3502100F5EE51 /* Localizable.strings */; };
 		D1D502AE25B351B300F5EE51 /* WordOfTheDayEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D502AD25B351B300F5EE51 /* WordOfTheDayEntry.swift */; };
-		D1DAAF5A25BC43F400E648EB /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DAAF5925BC43F400E648EB /* NetworkKit.framework */; };
-		D1DAAF5B25BC43F400E648EB /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1DAAF5925BC43F400E648EB /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,17 +52,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D1022F9725B358DA00C1AD0C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D1DAAF5B25BC43F400E648EB /* NetworkKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D1732C9425B89B82009E55E8 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,8 +110,6 @@
 		D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
 		D1D502A925B3502100F5EE51 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D1D502AD25B351B300F5EE51 /* WordOfTheDayEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayEntry.swift; sourceTree = "<group>"; };
-		D1DAAF3225BC41AA00E648EB /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1DAAF5925BC43F400E648EB /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1DAAF5A25BC43F400E648EB /* NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,8 +252,6 @@
 		D1D501F625B1FF8A00F5EE51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D1DAAF5925BC43F400E648EB /* NetworkKit.framework */,
-				D1DAAF3225BC41AA00E648EB /* NetworkKit.framework */,
 				D1D501F725B1FF8A00F5EE51 /* WidgetKit.framework */,
 				D1D501F925B1FF8A00F5EE51 /* SwiftUI.framework */,
 			);
@@ -321,7 +303,6 @@
 				D1B1350425B0B73E00B75A8B /* Frameworks */,
 				D1B1350525B0B73E00B75A8B /* Resources */,
 				D1D5020A25B1FF9000F5EE51 /* Embed App Extensions */,
-				D1022F9725B358DA00C1AD0C /* Embed Frameworks */,
 				D1732C9425B89B82009E55E8 /* Embed Watch Content */,
 			);
 			buildRules = (
