@@ -9,22 +9,21 @@ import Alamofire
 import Foundation
 
 public struct API {
-    
-    // MARK: - Private Properties
-    
-    static let APIKey = "a2qxow9tr8xm3mtclhmeayell2hjcifc48mcez06hcelvmkev"
 
     // MARK: - Public Methods
     
-    public static func getWordOfTheDay(for date: Date, completion: @escaping(_ result: Result<WordOfTheDayDTO?, Error>) -> Void) {
+    public static func getWordOfTheDay(for date: Date, completion: @escaping(_ result: Result<WordOfTheDayDTO, Error>) -> Void) {
         
-        AF.request(Endpoint.wordOfTheDay(date: date).url)
-          .validate()
+        let endpoint = Endpoint.wordOfTheDay(date: date).url
+        
+        AF.request(endpoint)
           .responseDecodable(of: WordOfTheDayDTO.self) { response in
-            guard let wordOfTheDay = response.value else { return
-                completion(.failure(ServiceError.serverError))
+            guard let wordOfTheDay = response.value else {
+                print("❌ \(endpoint)")
+                return completion(.failure(ServiceError.serverError))
             }
             
+            print("✅ \(endpoint)")
             completion(.success(wordOfTheDay))
         }
     }

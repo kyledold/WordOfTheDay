@@ -15,8 +15,8 @@ struct WordOfTheDayWidget: Widget {
     let kind: String = "WordOfTheDayWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: WordOfTheDayWidgetProvider()) { entry in
-            WordOfTheDayWidgetEntryView(entry: entry)
+        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: WordOfTheDayWidgetProvider()) { viewModel in
+            WordOfTheDayWidgetEntryView(viewModel: viewModel)
         }
         .configurationDisplayName(LocalizedStringKey("widget.display_name"))
         .description(LocalizedStringKey("widget.description"))

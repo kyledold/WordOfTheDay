@@ -10,4 +10,16 @@ public struct DefinitionDTO: Decodable {
     public let text: String
     public let note: String?
     public let partOfSpeech: String
+    
+    public init(
+        source: String,
+        text: String,
+        note: String?,
+        partOfSpeech: String
+    ) {
+        self.source = source
+        self.text = text
+        self.note = note
+        self.partOfSpeech = partOfSpeech
+    }
 }

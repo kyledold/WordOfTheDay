@@ -12,20 +12,20 @@ struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
     
     var body: some View {
-        
-        VStack(alignment: .center, spacing: 20) {
-            Text(LocalizedStringKey("app.title"))
-                .modifier(HeadingStyle())
-            List {
-                Section {
-                    ForEach(viewModel.items, id: \.rawValue) { item in
-                        Button(action: { handleTapOnItem(item) }) {
-                            HomeRow(item: item)
+        NavigationView {
+            VStack(alignment: .leading, spacing: 20) {
+                List {
+                    Section {
+                        ForEach(viewModel.items, id: \.rawValue) { item in
+                            Button(action: { handleTapOnItem(item) }) {
+                                HomeRow(item: item)
+                            }
                         }
                     }
                 }
+                .listStyle(InsetGroupedListStyle())
             }
-            .listStyle(InsetGroupedListStyle())
+            .navigationBarTitle(Text(LocalizedStringKey("app.title")), displayMode: .inline)
         }
     }
     
@@ -40,5 +40,11 @@ struct HomeView: View {
         guard UIApplication.shared.canOpenURL(url) else { return }
         
         UIApplication.shared.open(url)
+    }
+}
+
+struct HomeView_Preview: PreviewProvider {
+    static var previews: some View {
+        HomeView(viewModel: HomeViewModel())
     }
 }

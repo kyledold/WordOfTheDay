@@ -29,6 +29,10 @@ review the [CONTRIBUTING](.github/CONTRIBUTING.md) guidelines.
 
 This project uses [AlamoFire](https://github.com/Alamofire/Alamofire) to handle network requests.
 
+## Data
+
+The data for the project comes for [Wordnik](https://www.wordnik.com/) and you will need to request an API key from them and then reference it in the NetworkKit layer.
+
 ## License
 
 "Word Of The Day" is released under the MIT license. See [LICENSE](mit) for details.

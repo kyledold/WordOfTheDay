@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D11F4B9425BDD868009F8950 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F4B9325BDD868009F8950 /* Constants.swift */; };
+		D11F4B9525BDD868009F8950 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F4B9325BDD868009F8950 /* Constants.swift */; };
+		D11F4B9D25BDF09B009F8950 /* FormattedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F4B9C25BDF09B009F8950 /* FormattedDate.swift */; };
+		D11F4B9E25BDF09B009F8950 /* FormattedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F4B9C25BDF09B009F8950 /* FormattedDate.swift */; };
+		D11F4BA425BDF10D009F8950 /* ISO8601DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F4BA325BDF10D009F8950 /* ISO8601DateFormat.swift */; };
+		D11F4BA525BDF10D009F8950 /* ISO8601DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F4BA325BDF10D009F8950 /* ISO8601DateFormat.swift */; };
 		D1DAAEF125BC3D5B00E648EB /* NetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D1DAAEEF25BC3D5B00E648EB /* NetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1DAAF0C25BC401800E648EB /* NetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D1DAAEEF25BC3D5B00E648EB /* NetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1DAAF1725BC40BA00E648EB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAAF1525BC40BA00E648EB /* API.swift */; };
@@ -26,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D11F4B9325BDD868009F8950 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D11F4B9C25BDF09B009F8950 /* FormattedDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedDate.swift; sourceTree = "<group>"; };
+		D11F4BA325BDF10D009F8950 /* ISO8601DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601DateFormat.swift; sourceTree = "<group>"; };
 		D1DAAEEC25BC3D5B00E648EB /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DAAEEF25BC3D5B00E648EB /* NetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkKit.h; sourceTree = "<group>"; };
 		D1DAAEFB25BC3D7500E648EB /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D11F4B9B25BDF081009F8950 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				D11F4B9C25BDF09B009F8950 /* FormattedDate.swift */,
+				D11F4BA325BDF10D009F8950 /* ISO8601DateFormat.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
 		D1DAAEE025BC3D1100E648EB = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +111,7 @@
 			children = (
 				D1DAAF1425BC40BA00E648EB /* API */,
 				D1DAAF2125BC40C700E648EB /* Extensions */,
+				D11F4B9B25BDF081009F8950 /* Formatters */,
 				D1DAAF1D25BC40C700E648EB /* Models */,
 			);
 			path = Source;
@@ -103,6 +122,7 @@
 			children = (
 				D1DAAF1525BC40BA00E648EB /* API.swift */,
 				D1DAAF1625BC40BA00E648EB /* Endpoint.swift */,
+				D11F4B9325BDD868009F8950 /* Constants.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -110,9 +130,9 @@
 		D1DAAF1D25BC40C700E648EB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D1DAAF2025BC40C700E648EB /* DefinitionDTO.swift */,
 				D1DAAF1E25BC40C700E648EB /* ExampleDTO.swift */,
 				D1DAAF1F25BC40C700E648EB /* WordOfTheDayDTO.swift */,
-				D1DAAF2025BC40C700E648EB /* DefinitionDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,10 +278,13 @@
 			files = (
 				D1DAAF2325BC40C700E648EB /* ExampleDTO.swift in Sources */,
 				D1DAAF2725BC40C700E648EB /* DefinitionDTO.swift in Sources */,
+				D11F4B9D25BDF09B009F8950 /* FormattedDate.swift in Sources */,
 				D1DAAF2925BC40C700E648EB /* DateFormatterExtension.swift in Sources */,
 				D1DAAF1925BC40BA00E648EB /* Endpoint.swift in Sources */,
+				D11F4B9425BDD868009F8950 /* Constants.swift in Sources */,
 				D1DAAF1725BC40BA00E648EB /* API.swift in Sources */,
 				D1DAAF2525BC40C700E648EB /* WordOfTheDayDTO.swift in Sources */,
+				D11F4BA425BDF10D009F8950 /* ISO8601DateFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,10 +294,13 @@
 			files = (
 				D1DAAF2425BC40C700E648EB /* ExampleDTO.swift in Sources */,
 				D1DAAF2825BC40C700E648EB /* DefinitionDTO.swift in Sources */,
+				D11F4B9E25BDF09B009F8950 /* FormattedDate.swift in Sources */,
 				D1DAAF2A25BC40C700E648EB /* DateFormatterExtension.swift in Sources */,
 				D1DAAF1A25BC40BA00E648EB /* Endpoint.swift in Sources */,
+				D11F4B9525BDD868009F8950 /* Constants.swift in Sources */,
 				D1DAAF1825BC40BA00E648EB /* API.swift in Sources */,
 				D1DAAF2625BC40C700E648EB /* WordOfTheDayDTO.swift in Sources */,
+				D11F4BA525BDF10D009F8950 /* ISO8601DateFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

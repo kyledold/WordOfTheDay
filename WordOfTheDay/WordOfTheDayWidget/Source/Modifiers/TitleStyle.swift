@@ -11,8 +11,9 @@ public struct TitleStyle: ViewModifier {
     
     public func body(content: Content) -> some View {
         content
-            .font(.custom("Merriweather-Regular", size: 24))
+            .font(.custom("Merriweather-Regular", size: 18))
             .foregroundColor(.primary)
+            .frame(maxWidth: .infinity, alignment: .leading)
     }
     
     public init() {}

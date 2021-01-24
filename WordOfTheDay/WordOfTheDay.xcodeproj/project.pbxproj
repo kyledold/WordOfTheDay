@@ -13,13 +13,14 @@
 		D102305125B603E200C1AD0C /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1022FE525B5FEAA00C1AD0C /* Merriweather-Regular.ttf */; };
 		D102305325B603E400C1AD0C /* Trirong-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1022FF425B5FFA700C1AD0C /* Trirong-Light.ttf */; };
 		D102305525B603E600C1AD0C /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1022FEE25B5FF8900C1AD0C /* OpenSans-LightItalic.ttf */; };
+		D11F4B8A25BD99A1009F8950 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11F4B8925BD99A1009F8950 /* NetworkKit.framework */; };
+		D11F4B8B25BD99A1009F8950 /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D11F4B8925BD99A1009F8950 /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1732A9925B747C1009E55E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732A9825B747C1009E55E8 /* HomeViewModel.swift */; };
 		D1732A9D25B74841009E55E8 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732A9C25B74841009E55E8 /* HomeItem.swift */; };
 		D1732AA425B74B22009E55E8 /* HomeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AA325B74B22009E55E8 /* HomeRow.swift */; };
 		D1732AA925B74B7A009E55E8 /* TitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AA825B74B7A009E55E8 /* TitleStyle.swift */; };
 		D1732AAC25B74D05009E55E8 /* SubTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */; };
 		D1732AB325B74E18009E55E8 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AB225B74E18009E55E8 /* ImageExtension.swift */; };
-		D1732AB625B75066009E55E8 /* HeadingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AB525B75066009E55E8 /* HeadingStyle.swift */; };
 		D1732ABB25B750C0009E55E8 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1732ABA25B750C0009E55E8 /* Merriweather-Regular.ttf */; };
 		D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */; };
 		D1B1350D25B0B73E00B75A8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350C25B0B73E00B75A8B /* HomeView.swift */; };
@@ -38,7 +39,6 @@
 		D1D5029225B2061A00F5EE51 /* WordOfTheDayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */; };
 		D1D5029D25B2066700F5EE51 /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */; };
 		D1D502AA25B3502100F5EE51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1D502A925B3502100F5EE51 /* Localizable.strings */; };
-		D1D502AE25B351B300F5EE51 /* WordOfTheDayEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D502AD25B351B300F5EE51 /* WordOfTheDayEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D11F4B8C25BD99A1009F8950 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D11F4B8B25BD99A1009F8950 /* NetworkKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1732C9425B89B82009E55E8 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,13 +93,13 @@
 		D102300C25B6003400C1AD0C /* TitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleStyle.swift; sourceTree = "<group>"; };
 		D102301625B6005700C1AD0C /* SubTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleStyle.swift; sourceTree = "<group>"; };
 		D102301B25B6008300C1AD0C /* BodyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyStyle.swift; sourceTree = "<group>"; };
+		D11F4B8925BD99A1009F8950 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1732A9825B747C1009E55E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D1732A9C25B74841009E55E8 /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
 		D1732AA325B74B22009E55E8 /* HomeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRow.swift; sourceTree = "<group>"; };
 		D1732AA825B74B7A009E55E8 /* TitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleStyle.swift; sourceTree = "<group>"; };
 		D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleStyle.swift; sourceTree = "<group>"; };
 		D1732AB225B74E18009E55E8 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
-		D1732AB525B75066009E55E8 /* HeadingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingStyle.swift; sourceTree = "<group>"; };
 		D1732ABA25B750C0009E55E8 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Merriweather-Regular.ttf"; path = "WordOfTheDayWidget/Resources/Fonts/Merriweather-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		D1B1350725B0B73E00B75A8B /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayApp.swift; sourceTree = "<group>"; };
@@ -109,7 +120,6 @@
 		D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayEntryView.swift; sourceTree = "<group>"; };
 		D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
 		D1D502A925B3502100F5EE51 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		D1D502AD25B351B300F5EE51 /* WordOfTheDayEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +136,7 @@
 			files = (
 				D1D5026B25B2051F00F5EE51 /* SwiftUI.framework in Frameworks */,
 				D1D5026A25B2051F00F5EE51 /* WidgetKit.framework in Frameworks */,
+				D11F4B8A25BD99A1009F8950 /* NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +166,6 @@
 		D1732AA625B74B49009E55E8 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				D1732AB525B75066009E55E8 /* HeadingStyle.swift */,
 				D1732AA825B74B7A009E55E8 /* TitleStyle.swift */,
 				D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */,
 			);
@@ -252,6 +262,7 @@
 		D1D501F625B1FF8A00F5EE51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D11F4B8925BD99A1009F8950 /* NetworkKit.framework */,
 				D1D501F725B1FF8A00F5EE51 /* WidgetKit.framework */,
 				D1D501F925B1FF8A00F5EE51 /* SwiftUI.framework */,
 			);
@@ -274,7 +285,6 @@
 				D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */,
 				D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */,
 				D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */,
-				D1D502AD25B351B300F5EE51 /* WordOfTheDayEntry.swift */,
 				D102301525B6004200C1AD0C /* Modifiers */,
 			);
 			path = Source;
@@ -324,6 +334,7 @@
 				D1D5026525B2051F00F5EE51 /* Sources */,
 				D1D5026625B2051F00F5EE51 /* Frameworks */,
 				D1D5026725B2051F00F5EE51 /* Resources */,
+				D11F4B8C25BD99A1009F8950 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -412,7 +423,6 @@
 				D1732AAC25B74D05009E55E8 /* SubTitleStyle.swift in Sources */,
 				D1732A9925B747C1009E55E8 /* HomeViewModel.swift in Sources */,
 				D1732AA925B74B7A009E55E8 /* TitleStyle.swift in Sources */,
-				D1732AB625B75066009E55E8 /* HeadingStyle.swift in Sources */,
 				D1B1351E25B0B86900B75A8B /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +437,6 @@
 				D1D5026E25B2051F00F5EE51 /* WordOfTheDayWidget.swift in Sources */,
 				D1D5028D25B2061700F5EE51 /* WordOfTheDayEntryView.swift in Sources */,
 				D102304F25B603DD00C1AD0C /* BodyStyle.swift in Sources */,
-				D1D502AE25B351B300F5EE51 /* WordOfTheDayEntry.swift in Sources */,
 				D102304D25B603DB00C1AD0C /* TitleStyle.swift in Sources */,
 				D1D5029D25B2066700F5EE51 /* WordOfTheDayViewModel.swift in Sources */,
 			);

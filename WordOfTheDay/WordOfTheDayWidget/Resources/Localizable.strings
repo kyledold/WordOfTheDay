@@ -8,3 +8,6 @@
 
 "widget.display_name" = "Word of the day";
 "widget.description" = "Daily word with definition and example";
+"widget.entry_view.definition" = "DEFINITION";
+"widget.entry_view.example" = "EXAMPLE";
+"widget.entry_view.origin" = "ORIGIN";
