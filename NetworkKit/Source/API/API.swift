@@ -12,7 +12,7 @@ public struct API {
     
     // MARK: - Private Properties
     
-    static let APIKey = ""
+    static let APIKey = "a2qxow9tr8xm3mtclhmeayell2hjcifc48mcez06hcelvmkev"
 
     // MARK: - Public Methods
     
