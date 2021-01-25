@@ -150,8 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				D15237DF25BF381C00809652 /* TitleStyle.swift */,
-				D15237E825BF38AC00809652 /* BodyStyle.swift */,
 				D15237F225BF391900809652 /* SubTitleStyle.swift */,
+				D15237E825BF38AC00809652 /* BodyStyle.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
