@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D11F4BB225BF2EC1009F8950 /* WordOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F4BB125BF2EC1009F8950 /* WordOfTheDayView.swift */; };
+		D11F4BC225BF3074009F8950 /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F4BC125BF3074009F8950 /* WordOfTheDayViewModel.swift */; };
 		D1DAB07725BC59CF00E648EB /* WordOfTheDayWatchApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D1DAB07625BC59CF00E648EB /* WordOfTheDayWatchApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D1DAB07C25BC59D200E648EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DAB07B25BC59D200E648EB /* Assets.xcassets */; };
 		D1DAB08325BC59D200E648EB /* WordOfTheDayWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1DAB08225BC59D200E648EB /* WordOfTheDayWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D1DAB08825BC59D200E648EB /* WordOfTheDayWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAB08725BC59D200E648EB /* WordOfTheDayWatchAppApp.swift */; };
-		D1DAB08A25BC59D200E648EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAB08925BC59D200E648EB /* ContentView.swift */; };
 		D1DAB08C25BC59D200E648EB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAB08B25BC59D200E648EB /* NotificationController.swift */; };
 		D1DAB08E25BC59D200E648EB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAB08D25BC59D200E648EB /* NotificationView.swift */; };
 		D1DAB09025BC59D200E648EB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAB08F25BC59D200E648EB /* ComplicationController.swift */; };
@@ -75,13 +76,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D11F4BB125BF2EC1009F8950 /* WordOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayView.swift; sourceTree = "<group>"; };
+		D11F4BC125BF3074009F8950 /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
 		D1DAB07225BC59CF00E648EB /* WordOfTheDayWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDayWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DAB07625BC59CF00E648EB /* WordOfTheDayWatchApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WordOfTheDayWatchApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DAB07B25BC59D200E648EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1DAB07D25BC59D200E648EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1DAB08225BC59D200E648EB /* WordOfTheDayWatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WordOfTheDayWatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DAB08725BC59D200E648EB /* WordOfTheDayWatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayWatchAppApp.swift; sourceTree = "<group>"; };
-		D1DAB08925BC59D200E648EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1DAB08B25BC59D200E648EB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		D1DAB08D25BC59D200E648EB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		D1DAB08F25BC59D200E648EB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D11F4BB925BF2EF9009F8950 /* Word Of The Day */ = {
+			isa = PBXGroup;
+			children = (
+				D11F4BB125BF2EC1009F8950 /* WordOfTheDayView.swift */,
+				D11F4BC125BF3074009F8950 /* WordOfTheDayViewModel.swift */,
+			);
+			path = "Word Of The Day";
+			sourceTree = "<group>";
+		};
+		D11F4BBA25BF2F05009F8950 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAB08B25BC59D200E648EB /* NotificationController.swift */,
+				D1DAB08D25BC59D200E648EB /* NotificationView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		D1DAB06B25BC59CF00E648EB = {
 			isa = PBXGroup;
 			children = (
@@ -172,10 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				D1DAB08725BC59D200E648EB /* WordOfTheDayWatchAppApp.swift */,
-				D1DAB08925BC59D200E648EB /* ContentView.swift */,
-				D1DAB08B25BC59D200E648EB /* NotificationController.swift */,
-				D1DAB08D25BC59D200E648EB /* NotificationView.swift */,
 				D1DAB08F25BC59D200E648EB /* ComplicationController.swift */,
+				D11F4BBA25BF2F05009F8950 /* Notifications */,
+				D11F4BB925BF2EF9009F8950 /* Word Of The Day */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -328,10 +347,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11F4BC225BF3074009F8950 /* WordOfTheDayViewModel.swift in Sources */,
 				D1DAB08C25BC59D200E648EB /* NotificationController.swift in Sources */,
-				D1DAB08A25BC59D200E648EB /* ContentView.swift in Sources */,
 				D1DAB09025BC59D200E648EB /* ComplicationController.swift in Sources */,
 				D1DAB08825BC59D200E648EB /* WordOfTheDayWatchAppApp.swift in Sources */,
+				D11F4BB225BF2EC1009F8950 /* WordOfTheDayView.swift in Sources */,
 				D1DAB08E25BC59D200E648EB /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
