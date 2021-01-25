@@ -18,8 +18,8 @@ struct WordOfTheDayWidget: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: WordOfTheDayWidgetProvider()) { viewModel in
             WordOfTheDayWidgetEntryView(viewModel: viewModel)
         }
-        .configurationDisplayName(LocalizedStringKey("widget.display_name"))
-        .description(LocalizedStringKey("widget.description"))
+        .configurationDisplayName(LocalizedStringKey("display_name"))
+        .description(LocalizedStringKey("description"))
         .supportedFamilies([.systemMedium, .systemLarge])
     }
 }

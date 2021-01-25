@@ -12,7 +12,7 @@ struct WordOfTheDayWatchAppApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                WordOfTheDayView()
+                WordOfTheDayView(viewModel: WordOfTheDayViewModel())
             }
         }
 

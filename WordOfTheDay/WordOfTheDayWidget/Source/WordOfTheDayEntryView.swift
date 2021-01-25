@@ -20,7 +20,7 @@ struct WordOfTheDayWidgetEntryView: View {
                 .modifier(TitleStyle())
             
             VStack(alignment: .leading) {
-                Text(LocalizedStringKey("widget.entry_view.definition"))
+                Text(LocalizedStringKey("entry_view.definition"))
                     .modifier(SubTitleStyle())
                 Text(viewModel.wordDescription)
                     .modifier(BodyStyle())
@@ -28,13 +28,13 @@ struct WordOfTheDayWidgetEntryView: View {
             
             if case .systemLarge = widgetFamily {
                 VStack(alignment: .leading) {
-                    Text(LocalizedStringKey("widget.entry_view.example"))
+                    Text(LocalizedStringKey("entry_view.example"))
                         .modifier(SubTitleStyle())
                     Text(viewModel.wordExample)
                         .modifier(BodyStyle())
                 }
                 VStack(alignment: .leading) {
-                    Text(LocalizedStringKey("widget.entry_view.origin"))
+                    Text(LocalizedStringKey("entry_view.origin"))
                         .modifier(SubTitleStyle())
                     Text(viewModel.origin)
                         .modifier(BodyStyle())

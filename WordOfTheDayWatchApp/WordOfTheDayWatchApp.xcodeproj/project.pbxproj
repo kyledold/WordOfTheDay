@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		D11F4BB225BF2EC1009F8950 /* WordOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F4BB125BF2EC1009F8950 /* WordOfTheDayView.swift */; };
 		D11F4BC225BF3074009F8950 /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F4BC125BF3074009F8950 /* WordOfTheDayViewModel.swift */; };
+		D15237DB25BF368900809652 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D15237DA25BF368900809652 /* Localizable.strings */; };
+		D15237E025BF381C00809652 /* TitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15237DF25BF381C00809652 /* TitleStyle.swift */; };
+		D15237E525BF386900809652 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D15237E425BF386900809652 /* Merriweather-Regular.ttf */; };
+		D15237E925BF38AC00809652 /* BodyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15237E825BF38AC00809652 /* BodyStyle.swift */; };
+		D15237EE25BF390500809652 /* Trirong-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D15237ED25BF390500809652 /* Trirong-Light.ttf */; };
+		D15237F325BF391900809652 /* SubTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15237F225BF391900809652 /* SubTitleStyle.swift */; };
 		D1DAB07725BC59CF00E648EB /* WordOfTheDayWatchApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D1DAB07625BC59CF00E648EB /* WordOfTheDayWatchApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D1DAB07C25BC59D200E648EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DAB07B25BC59D200E648EB /* Assets.xcassets */; };
 		D1DAB08325BC59D200E648EB /* WordOfTheDayWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1DAB08225BC59D200E648EB /* WordOfTheDayWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -78,6 +84,13 @@
 /* Begin PBXFileReference section */
 		D11F4BB125BF2EC1009F8950 /* WordOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayView.swift; sourceTree = "<group>"; };
 		D11F4BC125BF3074009F8950 /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
+		D15237DA25BF368900809652 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D15237DF25BF381C00809652 /* TitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleStyle.swift; sourceTree = "<group>"; };
+		D15237E425BF386900809652 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		D15237E825BF38AC00809652 /* BodyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyStyle.swift; sourceTree = "<group>"; };
+		D15237EC25BF38B700809652 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		D15237ED25BF390500809652 /* Trirong-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trirong-Light.ttf"; sourceTree = "<group>"; };
+		D15237F225BF391900809652 /* SubTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleStyle.swift; sourceTree = "<group>"; };
 		D1DAB07225BC59CF00E648EB /* WordOfTheDayWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDayWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DAB07625BC59CF00E648EB /* WordOfTheDayWatchApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WordOfTheDayWatchApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DAB07B25BC59D200E648EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,6 +144,26 @@
 				D1DAB08D25BC59D200E648EB /* NotificationView.swift */,
 			);
 			path = Notifications;
+			sourceTree = "<group>";
+		};
+		D15237DE25BF380400809652 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				D15237DF25BF381C00809652 /* TitleStyle.swift */,
+				D15237E825BF38AC00809652 /* BodyStyle.swift */,
+				D15237F225BF391900809652 /* SubTitleStyle.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		D15237E325BF385E00809652 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D15237ED25BF390500809652 /* Trirong-Light.ttf */,
+				D15237EC25BF38B700809652 /* OpenSans-LightItalic.ttf */,
+				D15237E425BF386900809652 /* Merriweather-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		D1DAB06B25BC59CF00E648EB = {
@@ -195,6 +228,7 @@
 				D1DAB08F25BC59D200E648EB /* ComplicationController.swift */,
 				D11F4BBA25BF2F05009F8950 /* Notifications */,
 				D11F4BB925BF2EF9009F8950 /* Word Of The Day */,
+				D15237DE25BF380400809652 /* Modifiers */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -202,9 +236,11 @@
 		D1DAB0AA25BC5A0300E648EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D15237E325BF385E00809652 /* Fonts */,
 				D1DAB09125BC59D500E648EB /* Assets.xcassets */,
 				D1DAB09625BC59D500E648EB /* Info.plist */,
 				D1DAB09725BC59D500E648EB /* PushNotificationPayload.apns */,
+				D15237DA25BF368900809652 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -336,6 +372,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1DAB09525BC59D500E648EB /* Preview Assets.xcassets in Resources */,
+				D15237DB25BF368900809652 /* Localizable.strings in Resources */,
+				D15237E525BF386900809652 /* Merriweather-Regular.ttf in Resources */,
+				D15237EE25BF390500809652 /* Trirong-Light.ttf in Resources */,
 				D1DAB09225BC59D500E648EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,8 +387,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D11F4BC225BF3074009F8950 /* WordOfTheDayViewModel.swift in Sources */,
+				D15237E925BF38AC00809652 /* BodyStyle.swift in Sources */,
 				D1DAB08C25BC59D200E648EB /* NotificationController.swift in Sources */,
+				D15237E025BF381C00809652 /* TitleStyle.swift in Sources */,
 				D1DAB09025BC59D200E648EB /* ComplicationController.swift in Sources */,
+				D15237F325BF391900809652 /* SubTitleStyle.swift in Sources */,
 				D1DAB08825BC59D200E648EB /* WordOfTheDayWatchAppApp.swift in Sources */,
 				D11F4BB225BF2EC1009F8950 /* WordOfTheDayView.swift in Sources */,
 				D1DAB08E25BC59D200E648EB /* NotificationView.swift in Sources */,

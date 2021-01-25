@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  WordOfTheDayWatchApp
+
+  Created by Kyle Dold on 25/01/2021.
+  
+*/
+
+"word_of_the_day.definition" = "DEFINITION";
+"word_of_the_day.example" = "EXAMPLE";
+"word_of_the_day.origin" = "ORIGIN";

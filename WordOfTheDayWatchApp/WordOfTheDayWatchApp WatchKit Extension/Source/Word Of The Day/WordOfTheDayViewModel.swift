@@ -6,17 +6,34 @@
 //
 
 import NetworkKit
+import SwiftUI
 
-struct WordOfTheDayViewModel {
+class WordOfTheDayViewModel: ObservableObject {
     
-    var word: String { wordOfTheDay.word  ?? "" }
-    var wordDescription: String { wordOfTheDay.definitions?.first?.text ?? "" }
-    var wordExample: String { wordOfTheDay.examples?.first?.text ?? "" }
-    var origin: String { wordOfTheDay.note  ?? "" }
+    @Published var word = ""
+    @Published var wordDescription = ""
+    @Published var wordExample = ""
+    @Published var origin = ""
     
-    private let wordOfTheDay: WordOfTheDayDTO
+    init() {
+        loadData()
+    }
     
-    public init(wordOfTheDay: WordOfTheDayDTO) {
-        self.wordOfTheDay = wordOfTheDay
+    private func loadData() {
+        
+        API.getWordOfTheDay(for: Date()) { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .success(let wordOfTheDayResponse):
+                self.word = wordOfTheDayResponse.word  ?? ""
+                self.wordDescription = wordOfTheDayResponse.definitions?.first?.text ?? ""
+                self.wordExample = wordOfTheDayResponse.examples?.first?.text ?? ""
+                self.origin = wordOfTheDayResponse.note  ?? ""
+                
+            case .failure:
+                break
+            }
+        }
     }
 }

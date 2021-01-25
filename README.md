@@ -6,11 +6,15 @@
 # Word Of The Day
 <br />
 <p align="center">
-  <img src="logo.png" alt="Logo" width="100" height="100">
+  <img src="Images/logo.png" alt="Logo" width="100" height="100">
   <p align="left">
     iOS Widget and WatchOS app made in SwiftUI that displays a random word of the day with description and example of usuage.
-
   </p>
+  <div style="text-align: center">
+  <img src="Images/preview_medium.png" width="30%" alt="Logo" >
+  <img src="Images/preview_large.png" width="30%"alt="Logo" >
+  <img src="Images/preview_watchOS.png" width="30%" alt="Logo" >
+  </div>
 </p>
 
 ## Requirements
