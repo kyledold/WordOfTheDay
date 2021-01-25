@@ -11,7 +11,12 @@ import WidgetKit
 
 struct WordOfTheDayViewModel {
     
-    let wordOfTheDay: WordOfTheDayDTO
+    var word: String { wordOfTheDay.word  ?? "" }
+    var wordDescription: String { wordOfTheDay.definitions?.first?.text ?? "" }
+    var wordExample: String { wordOfTheDay.examples?.first?.text ?? "" }
+    var origin: String { wordOfTheDay.note  ?? "" }
+    
+    private let wordOfTheDay: WordOfTheDayDTO
     private let configuration: ConfigurationIntent
     
     public init(wordOfTheDay: WordOfTheDayDTO, configuration: ConfigurationIntent) {

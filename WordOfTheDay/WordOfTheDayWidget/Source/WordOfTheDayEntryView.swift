@@ -16,13 +16,13 @@ struct WordOfTheDayWidgetEntryView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             
-            Text(viewModel.wordOfTheDay.word ?? "")
+            Text(viewModel.word)
                 .modifier(TitleStyle())
             
             VStack(alignment: .leading) {
                 Text(LocalizedStringKey("widget.entry_view.definition"))
                     .modifier(SubTitleStyle())
-                Text(viewModel.wordOfTheDay.definitions?.first?.text ?? "")
+                Text(viewModel.wordDescription)
                     .modifier(BodyStyle())
             }
             
@@ -30,13 +30,13 @@ struct WordOfTheDayWidgetEntryView: View {
                 VStack(alignment: .leading) {
                     Text(LocalizedStringKey("widget.entry_view.example"))
                         .modifier(SubTitleStyle())
-                    Text(viewModel.wordOfTheDay.examples?.first?.text ?? "")
+                    Text(viewModel.wordExample)
                         .modifier(BodyStyle())
                 }
                 VStack(alignment: .leading) {
                     Text(LocalizedStringKey("widget.entry_view.origin"))
                         .modifier(SubTitleStyle())
-                    Text(viewModel.wordOfTheDay.note ?? "")
+                    Text(viewModel.origin)
                         .modifier(BodyStyle())
                 }
             }
