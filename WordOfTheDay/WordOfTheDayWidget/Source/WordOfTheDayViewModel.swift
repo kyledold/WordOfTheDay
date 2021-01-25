@@ -9,23 +9,27 @@ import Foundation
 import NetworkKit
 import WidgetKit
 
-struct WordOfTheDayViewModel {
+class WordOfTheDayViewModel: ObservableObject {
     
-    var word: String { wordOfTheDay.word  ?? "" }
-    var wordDescription: String { wordOfTheDay.definitions?.first?.text ?? "" }
-    var wordExample: String { wordOfTheDay.examples?.first?.text ?? "" }
-    var origin: String { wordOfTheDay.note  ?? "" }
+    @Published var word = ""
+    @Published var wordDescription = ""
+    @Published var wordExample = ""
+    @Published var origin = ""
     
-    private let wordOfTheDay: WordOfTheDayDTO
+    private let publishDate: Date
     private let configuration: ConfigurationIntent
     
     public init(wordOfTheDay: WordOfTheDayDTO, configuration: ConfigurationIntent) {
-        self.wordOfTheDay = wordOfTheDay
+        self.word = wordOfTheDay.word  ?? ""
+        self.wordDescription = wordOfTheDay.definitions?.first?.text ?? ""
+        self.wordExample = wordOfTheDay.examples?.first?.text ?? ""
+        self.origin = wordOfTheDay.note  ?? ""
+        self.publishDate = wordOfTheDay.publishDate?.date ?? Date()
         self.configuration = configuration
     }
 }
 
 extension WordOfTheDayViewModel: TimelineEntry {
     
-    var date: Date { wordOfTheDay.publishDate?.date ?? Date() }
+    var date: Date { publishDate }
 }

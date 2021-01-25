@@ -11,7 +11,7 @@ import WidgetKit
 struct WordOfTheDayWidgetEntryView: View {
     
     @Environment(\.widgetFamily) var widgetFamily
-    var viewModel: WordOfTheDayViewModel
+    @ObservedObject var viewModel: WordOfTheDayViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
