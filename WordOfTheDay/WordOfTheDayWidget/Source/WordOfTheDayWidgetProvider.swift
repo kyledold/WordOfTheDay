@@ -28,13 +28,14 @@ struct WordOfTheDayWidgetProvider: IntentTimelineProvider {
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<ViewModel>) -> Void) {
         // Generate a timeline with one entry that refreshes at midnight.
         let currentDate = Date()
-        let refreshDate = calendar.date(byAdding: .minute, value: 1, to: currentDate)!
+        let startOfDay = calendar.startOfDay(for: currentDate)
+        let endOfDay = calendar.date(byAdding: .day, value: 1, to: startOfDay)!
         
         API.getWordOfTheDay(for: currentDate) { result in
             switch result {
             case .success(let wordOfTheDay):
                 let entry = ViewModel(wordOfTheDay: wordOfTheDay, configuration: configuration)
-                let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
+                let timeline = Timeline(entries: [entry], policy: .after(endOfDay))
                 completion(timeline)
                 
             case .failure:
