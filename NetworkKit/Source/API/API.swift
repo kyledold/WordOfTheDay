@@ -19,7 +19,7 @@ public struct API {
         AF.request(endpoint)
           .responseDecodable(of: WordOfTheDayDTO.self) { response in
             guard let wordOfTheDay = response.value else {
-                print("❌ \(endpoint)")
+                print("❌ \(endpoint) - \(String(describing: response.error))")
                 return completion(.failure(ServiceError.serverError))
             }
             

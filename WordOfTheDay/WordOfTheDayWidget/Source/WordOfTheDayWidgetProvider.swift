@@ -28,14 +28,13 @@ struct WordOfTheDayWidgetProvider: IntentTimelineProvider {
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<ViewModel>) -> Void) {
         // Generate a timeline with one entry that refreshes at midnight.
         let currentDate = Date()
-        let startOfDay = calendar.startOfDay(for: currentDate)
-        let endOfDay = calendar.date(byAdding: .day, value: 1, to: startOfDay)!
+        let refreshDate = calendar.date(byAdding: .minute, value: 1, to: currentDate)!
         
         API.getWordOfTheDay(for: currentDate) { result in
             switch result {
             case .success(let wordOfTheDay):
                 let entry = ViewModel(wordOfTheDay: wordOfTheDay, configuration: configuration)
-                let timeline = Timeline(entries: [entry], policy: .after(endOfDay))
+                let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
                 completion(timeline)
                 
             case .failure:
@@ -61,7 +60,6 @@ extension WordOfTheDayWidgetProvider {
             ],
             examples: [
                 ExampleDTO(
-                    url: URL(string: "http://books.simonandschuster.com/9781416545781")!,
                     title: "The Bass Handbook of Leadership",
                     text: "The nomothetic approach tries to draw inferences from a more limited exposure to a large number of cases.",
                     id: 1121006194
