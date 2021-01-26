@@ -61,7 +61,6 @@ extension WordOfTheDayWidgetProvider {
             ],
             examples: [
                 ExampleDTO(
-                    url: URL(string: "http://books.simonandschuster.com/9781416545781")!,
                     title: "The Bass Handbook of Leadership",
                     text: "The nomothetic approach tries to draw inferences from a more limited exposure to a large number of cases.",
                     id: 1121006194

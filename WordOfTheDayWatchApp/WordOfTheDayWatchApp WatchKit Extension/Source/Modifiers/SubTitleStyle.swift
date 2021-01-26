@@ -11,7 +11,7 @@ public struct SubTitleStyle: ViewModifier {
     
     public func body(content: Content) -> some View {
         content
-            .font(.custom("Trirong-Light", size: 12))
+            .font(.footnote)
             .foregroundColor(.secondary)
             .frame(maxWidth: .infinity, alignment: .leading)
     }

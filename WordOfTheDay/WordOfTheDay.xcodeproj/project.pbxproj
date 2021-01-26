@@ -10,9 +10,6 @@
 		D102304B25B603D800C1AD0C /* SubTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102301625B6005700C1AD0C /* SubTitleStyle.swift */; };
 		D102304D25B603DB00C1AD0C /* TitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102300C25B6003400C1AD0C /* TitleStyle.swift */; };
 		D102304F25B603DD00C1AD0C /* BodyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102301B25B6008300C1AD0C /* BodyStyle.swift */; };
-		D102305125B603E200C1AD0C /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1022FE525B5FEAA00C1AD0C /* Merriweather-Regular.ttf */; };
-		D102305325B603E400C1AD0C /* Trirong-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1022FF425B5FFA700C1AD0C /* Trirong-Light.ttf */; };
-		D102305525B603E600C1AD0C /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1022FEE25B5FF8900C1AD0C /* OpenSans-LightItalic.ttf */; };
 		D11F4B8A25BD99A1009F8950 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11F4B8925BD99A1009F8950 /* NetworkKit.framework */; };
 		D11F4B8B25BD99A1009F8950 /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D11F4B8925BD99A1009F8950 /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1732A9925B747C1009E55E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732A9825B747C1009E55E8 /* HomeViewModel.swift */; };
@@ -21,7 +18,6 @@
 		D1732AA925B74B7A009E55E8 /* TitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AA825B74B7A009E55E8 /* TitleStyle.swift */; };
 		D1732AAC25B74D05009E55E8 /* SubTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */; };
 		D1732AB325B74E18009E55E8 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AB225B74E18009E55E8 /* ImageExtension.swift */; };
-		D1732ABB25B750C0009E55E8 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1732ABA25B750C0009E55E8 /* Merriweather-Regular.ttf */; };
 		D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */; };
 		D1B1350D25B0B73E00B75A8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350C25B0B73E00B75A8B /* HomeView.swift */; };
 		D1B1350F25B0B74300B75A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1350E25B0B74300B75A8B /* Assets.xcassets */; };
@@ -87,9 +83,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D1022FE525B5FEAA00C1AD0C /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
-		D1022FEE25B5FF8900C1AD0C /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		D1022FF425B5FFA700C1AD0C /* Trirong-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trirong-Light.ttf"; sourceTree = "<group>"; };
 		D102300C25B6003400C1AD0C /* TitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleStyle.swift; sourceTree = "<group>"; };
 		D102301625B6005700C1AD0C /* SubTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleStyle.swift; sourceTree = "<group>"; };
 		D102301B25B6008300C1AD0C /* BodyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyStyle.swift; sourceTree = "<group>"; };
@@ -100,7 +93,6 @@
 		D1732AA825B74B7A009E55E8 /* TitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleStyle.swift; sourceTree = "<group>"; };
 		D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleStyle.swift; sourceTree = "<group>"; };
 		D1732AB225B74E18009E55E8 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
-		D1732ABA25B750C0009E55E8 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Merriweather-Regular.ttf"; path = "WordOfTheDayWidget/Resources/Fonts/Merriweather-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		D1B1350725B0B73E00B75A8B /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayApp.swift; sourceTree = "<group>"; };
 		D1B1350C25B0B73E00B75A8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -143,16 +135,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D1022FE425B5FE7000C1AD0C /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				D1022FE525B5FEAA00C1AD0C /* Merriweather-Regular.ttf */,
-				D1022FF425B5FFA700C1AD0C /* Trirong-Light.ttf */,
-				D1022FEE25B5FF8900C1AD0C /* OpenSans-LightItalic.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		D102301525B6004200C1AD0C /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,14 +163,6 @@
 				D1732AA625B74B49009E55E8 /* Modifiers */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		D1732AB925B750AD009E55E8 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				D1732ABA25B750C0009E55E8 /* Merriweather-Regular.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		D1B134FE25B0B73E00B75A8B = {
@@ -242,7 +216,6 @@
 		D1B1351B25B0B82A00B75A8B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D1732AB925B750AD009E55E8 /* Fonts */,
 				D1B1352F25B0BB1000B75A8B /* Localizable.strings */,
 				D1B1350E25B0B74300B75A8B /* Assets.xcassets */,
 				D1B1351325B0B74300B75A8B /* Info.plist */,
@@ -293,7 +266,6 @@
 		D1D5028225B2057500F5EE51 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D1022FE425B5FE7000C1AD0C /* Fonts */,
 				D1D5026F25B2051F00F5EE51 /* WordOfTheDayWidget.intentdefinition */,
 				D1D5027025B2052200F5EE51 /* Assets.xcassets */,
 				D1D5027225B2052200F5EE51 /* Info.plist */,
@@ -390,7 +362,6 @@
 			files = (
 				D1B1351225B0B74300B75A8B /* Preview Assets.xcassets in Resources */,
 				D1B1353025B0BB1000B75A8B /* Localizable.strings in Resources */,
-				D1732ABB25B750C0009E55E8 /* Merriweather-Regular.ttf in Resources */,
 				D1B1350F25B0B74300B75A8B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,10 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D5027125B2052200F5EE51 /* Assets.xcassets in Resources */,
-				D102305125B603E200C1AD0C /* Merriweather-Regular.ttf in Resources */,
 				D1D502AA25B3502100F5EE51 /* Localizable.strings in Resources */,
-				D102305325B603E400C1AD0C /* Trirong-Light.ttf in Resources */,
-				D102305525B603E600C1AD0C /* OpenSans-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
