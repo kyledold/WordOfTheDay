@@ -46,9 +46,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Merriweather-Regular.ttf</string>
-	</array>
 </dict>
 </plist>
