@@ -56,8 +56,10 @@
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "8"
       notificationPayloadFile = "WordOfTheDayWatchApp WatchKit Extension/Resources/PushNotificationPayload.apns">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/WordOfTheDay">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D1DAB07525BC59CF00E648EB"
@@ -65,7 +67,7 @@
             BlueprintName = "WordOfTheDayWatchApp WatchKit App"
             ReferencedContainer = "container:WordOfTheDayWatchApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -73,8 +75,10 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/WordOfTheDay">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D1DAB07525BC59CF00E648EB"
@@ -82,7 +86,16 @@
             BlueprintName = "WordOfTheDayWatchApp WatchKit App"
             ReferencedContainer = "container:WordOfTheDayWatchApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D1DAB07525BC59CF00E648EB"
+            BuildableName = "WordOfTheDayWatchApp WatchKit App.app"
+            BlueprintName = "WordOfTheDayWatchApp WatchKit App"
+            ReferencedContainer = "container:WordOfTheDayWatchApp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
