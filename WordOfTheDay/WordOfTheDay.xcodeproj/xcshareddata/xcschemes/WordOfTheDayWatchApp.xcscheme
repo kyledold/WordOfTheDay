@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1230"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D1DAB07525BC59CF00E648EB"
-               BuildableName = "WordOfTheDayWatchApp WatchKit App.app"
-               BlueprintName = "WordOfTheDayWatchApp WatchKit App"
-               ReferencedContainer = "container:WordOfTheDayWatchApp.xcodeproj">
+               BlueprintIdentifier = "D168471825CAF6D2002BDC3F"
+               BuildableName = "WordOfTheDayWatchApp.app"
+               BlueprintName = "WordOfTheDayWatchApp"
+               ReferencedContainer = "container:WordOfTheDay.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D1DAB07125BC59CF00E648EB"
-               BuildableName = "WordOfTheDayWatchApp.app"
-               BlueprintName = "WordOfTheDayWatchApp"
-               ReferencedContainer = "container:WordOfTheDayWatchApp.xcodeproj">
+               BlueprintIdentifier = "D1B1350625B0B73E00B75A8B"
+               BuildableName = "WordOfTheDay.app"
+               BlueprintName = "WordOfTheDay"
+               ReferencedContainer = "container:WordOfTheDay.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -53,18 +53,19 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES"
-      notificationPayloadFile = "WordOfTheDayWatchApp WatchKit Extension/Resources/PushNotificationPayload.apns">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      allowLocationSimulation = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Word Of The Day: English">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D1DAB07525BC59CF00E648EB"
-            BuildableName = "WordOfTheDayWatchApp WatchKit App.app"
-            BlueprintName = "WordOfTheDayWatchApp WatchKit App"
-            ReferencedContainer = "container:WordOfTheDayWatchApp.xcodeproj">
+            BlueprintIdentifier = "D168471825CAF6D2002BDC3F"
+            BuildableName = "WordOfTheDayWatchApp.app"
+            BlueprintName = "WordOfTheDayWatchApp"
+            ReferencedContainer = "container:WordOfTheDay.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -72,16 +73,27 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Word Of The Day: English">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D1DAB07525BC59CF00E648EB"
-            BuildableName = "WordOfTheDayWatchApp WatchKit App.app"
-            BlueprintName = "WordOfTheDayWatchApp WatchKit App"
-            ReferencedContainer = "container:WordOfTheDayWatchApp.xcodeproj">
+            BlueprintIdentifier = "D168471825CAF6D2002BDC3F"
+            BuildableName = "WordOfTheDayWatchApp.app"
+            BlueprintName = "WordOfTheDayWatchApp"
+            ReferencedContainer = "container:WordOfTheDay.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D168471825CAF6D2002BDC3F"
+            BuildableName = "WordOfTheDayWatchApp.app"
+            BlueprintName = "WordOfTheDayWatchApp"
+            ReferencedContainer = "container:WordOfTheDay.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

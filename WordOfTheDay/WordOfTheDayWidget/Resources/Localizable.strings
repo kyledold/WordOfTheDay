@@ -6,7 +6,7 @@
   
 */
 
-"display_name" = "Word of the day";
+"display_name" = "Word Of The Day: English";
 "description" = "Daily word with definition and example";
 "entry_view.definition" = "DEFINITION";
 "entry_view.example" = "EXAMPLE";

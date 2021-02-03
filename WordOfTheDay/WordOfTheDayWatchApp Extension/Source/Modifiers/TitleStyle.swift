@@ -13,6 +13,8 @@ public struct TitleStyle: ViewModifier {
         content
             .font(.title)
             .foregroundColor(.primary)
+            .lineLimit(1)
+            .minimumScaleFactor(0.1)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
     

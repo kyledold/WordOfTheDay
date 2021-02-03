@@ -5,9 +5,6 @@
       location = "group:WordOfTheDay/WordOfTheDay.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:WordOfTheDayWatchApp/WordOfTheDayWatchApp.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:NetworkKit/NetworkKit.xcodeproj">
    </FileRef>
 </Workspace>
