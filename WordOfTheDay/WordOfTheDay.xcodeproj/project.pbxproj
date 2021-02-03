@@ -13,6 +13,23 @@
 		D168470D25CACC6E002BDC3F /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11F4B8925BD99A1009F8950 /* NetworkKit.framework */; };
 		D168470E25CACC6E002BDC3F /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D11F4B8925BD99A1009F8950 /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D168471525CACCBC002BDC3F /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D168471425CACCBC002BDC3F /* NetworkKit.framework */; };
+		D168472325CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D168472225CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D168473525CAF6DB002BDC3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D168473425CAF6DB002BDC3F /* Preview Assets.xcassets */; };
+		D168473A25CAF6DB002BDC3F /* WordOfTheDayWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D168471925CAF6D2002BDC3F /* WordOfTheDayWatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D168476225CAF72B002BDC3F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168474F25CAF72B002BDC3F /* ComplicationController.swift */; };
+		D168476425CAF72B002BDC3F /* TitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168475B25CAF72B002BDC3F /* TitleStyle.swift */; };
+		D168476625CAF72C002BDC3F /* SubTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168475D25CAF72B002BDC3F /* SubTitleStyle.swift */; };
+		D168476825CAF72C002BDC3F /* BodyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168475325CAF72B002BDC3F /* BodyStyle.swift */; };
+		D168476925CAF72C002BDC3F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168475525CAF72B002BDC3F /* NotificationController.swift */; };
+		D168476C25CAF72C002BDC3F /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168475625CAF72B002BDC3F /* NotificationView.swift */; };
+		D168476D25CAF72C002BDC3F /* WordOfTheDayWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168475725CAF72B002BDC3F /* WordOfTheDayWatchAppApp.swift */; };
+		D168477025CAF72C002BDC3F /* WordOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168475A25CAF72B002BDC3F /* WordOfTheDayView.swift */; };
+		D168477125CAF72C002BDC3F /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168476025CAF72B002BDC3F /* WordOfTheDayViewModel.swift */; };
+		D168478825CAF7D4002BDC3F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D168478425CAF7D3002BDC3F /* Localizable.strings */; };
+		D168478925CAF7D4002BDC3F /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = D168478525CAF7D4002BDC3F /* PushNotificationPayload.apns */; };
+		D168478A25CAF7D4002BDC3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D168478625CAF7D4002BDC3F /* Assets.xcassets */; };
+		D168479B25CAF846002BDC3F /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D168479A25CAF846002BDC3F /* NetworkKit.framework */; };
+		D16847AD25CAFAF1002BDC3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D168474B25CAF70C002BDC3F /* Assets.xcassets */; };
 		D1732A9925B747C1009E55E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732A9825B747C1009E55E8 /* HomeViewModel.swift */; };
 		D1732A9D25B74841009E55E8 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732A9C25B74841009E55E8 /* HomeItem.swift */; };
 		D1732AA425B74B22009E55E8 /* HomeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AA325B74B22009E55E8 /* HomeRow.swift */; };
@@ -39,6 +56,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D168472425CAF6D8002BDC3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1B134FF25B0B73E00B75A8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D168472125CAF6D8002BDC3F;
+			remoteInfo = "WordOfTheDayWatchApp Extension";
+		};
+		D168473825CAF6DB002BDC3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1B134FF25B0B73E00B75A8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D168471825CAF6D2002BDC3F;
+			remoteInfo = WordOfTheDayWatchApp;
+		};
 		D1D5027525B2052200F5EE51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D1B134FF25B0B73E00B75A8B /* Project object */;
@@ -60,12 +91,24 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D168473E25CAF6DB002BDC3F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D168472325CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1732C9425B89B82009E55E8 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
+				D168473A25CAF6DB002BDC3F /* WordOfTheDayWatchApp.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +132,25 @@
 		D102301B25B6008300C1AD0C /* BodyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyStyle.swift; sourceTree = "<group>"; };
 		D11F4B8925BD99A1009F8950 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D168471425CACCBC002BDC3F /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D168471925CAF6D2002BDC3F /* WordOfTheDayWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDayWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D168471D25CAF6D7002BDC3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D168472225CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WordOfTheDayWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D168473425CAF6DB002BDC3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D168473625CAF6DB002BDC3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D168474B25CAF70C002BDC3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D168474F25CAF72B002BDC3F /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D168475325CAF72B002BDC3F /* BodyStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyStyle.swift; sourceTree = "<group>"; };
+		D168475525CAF72B002BDC3F /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D168475625CAF72B002BDC3F /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		D168475725CAF72B002BDC3F /* WordOfTheDayWatchAppApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordOfTheDayWatchAppApp.swift; sourceTree = "<group>"; };
+		D168475A25CAF72B002BDC3F /* WordOfTheDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordOfTheDayView.swift; sourceTree = "<group>"; };
+		D168475B25CAF72B002BDC3F /* TitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleStyle.swift; sourceTree = "<group>"; };
+		D168475D25CAF72B002BDC3F /* SubTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTitleStyle.swift; sourceTree = "<group>"; };
+		D168476025CAF72B002BDC3F /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
+		D168478425CAF7D3002BDC3F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D168478525CAF7D4002BDC3F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D168478625CAF7D4002BDC3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D168479A25CAF846002BDC3F /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1732A9825B747C1009E55E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D1732A9C25B74841009E55E8 /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
 		D1732AA325B74B22009E55E8 /* HomeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRow.swift; sourceTree = "<group>"; };
@@ -117,6 +179,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D168471F25CAF6D8002BDC3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D168479B25CAF846002BDC3F /* NetworkKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1B1350425B0B73E00B75A8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +218,100 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		D168471A25CAF6D2002BDC3F /* WordOfTheDayWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				D168474525CAF6EA002BDC3F /* Resources */,
+			);
+			path = WordOfTheDayWatchApp;
+			sourceTree = "<group>";
+		};
+		D168472625CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D168474A25CAF6FF002BDC3F /* Source */,
+				D168474925CAF6F8002BDC3F /* Resources */,
+				D168473325CAF6DB002BDC3F /* Preview Content */,
+			);
+			path = "WordOfTheDayWatchApp Extension";
+			sourceTree = "<group>";
+		};
+		D168473325CAF6DB002BDC3F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D168473425CAF6DB002BDC3F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D168474525CAF6EA002BDC3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D168474B25CAF70C002BDC3F /* Assets.xcassets */,
+				D168471D25CAF6D7002BDC3F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D168474925CAF6F8002BDC3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D168478625CAF7D4002BDC3F /* Assets.xcassets */,
+				D168473625CAF6DB002BDC3F /* Info.plist */,
+				D168478525CAF7D4002BDC3F /* PushNotificationPayload.apns */,
+				D168478425CAF7D3002BDC3F /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D168474A25CAF6FF002BDC3F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D168475725CAF72B002BDC3F /* WordOfTheDayWatchAppApp.swift */,
+				D168474F25CAF72B002BDC3F /* ComplicationController.swift */,
+				D168475425CAF72B002BDC3F /* Notifications */,
+				D168475825CAF72B002BDC3F /* Views */,
+				D16847CA25CAFE1E002BDC3F /* ViewModels */,
+				D168475025CAF72B002BDC3F /* Modifiers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D168475025CAF72B002BDC3F /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				D168475B25CAF72B002BDC3F /* TitleStyle.swift */,
+				D168475D25CAF72B002BDC3F /* SubTitleStyle.swift */,
+				D168475325CAF72B002BDC3F /* BodyStyle.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		D168475425CAF72B002BDC3F /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				D168475525CAF72B002BDC3F /* NotificationController.swift */,
+				D168475625CAF72B002BDC3F /* NotificationView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		D168475825CAF72B002BDC3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D168475A25CAF72B002BDC3F /* WordOfTheDayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D16847CA25CAFE1E002BDC3F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D168476025CAF72B002BDC3F /* WordOfTheDayViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		D1732AA625B74B49009E55E8 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +337,8 @@
 			children = (
 				D1B1350925B0B73E00B75A8B /* WordOfTheDay */,
 				D1D5026C25B2051F00F5EE51 /* WordOfTheDayWidget */,
+				D168471A25CAF6D2002BDC3F /* WordOfTheDayWatchApp */,
+				D168472625CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension */,
 				D1D501F625B1FF8A00F5EE51 /* Frameworks */,
 				D1B1350825B0B73E00B75A8B /* Products */,
 			);
@@ -183,6 +349,8 @@
 			children = (
 				D1B1350725B0B73E00B75A8B /* WordOfTheDay.app */,
 				D1D5026925B2051F00F5EE51 /* WordOfTheDayWidgetExtension.appex */,
+				D168471925CAF6D2002BDC3F /* WordOfTheDayWatchApp.app */,
+				D168472225CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,6 +406,7 @@
 		D1D501F625B1FF8A00F5EE51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D168479A25CAF846002BDC3F /* NetworkKit.framework */,
 				D168471425CACCBC002BDC3F /* NetworkKit.framework */,
 				D11F4B8925BD99A1009F8950 /* NetworkKit.framework */,
 				D1D501F725B1FF8A00F5EE51 /* WidgetKit.framework */,
@@ -281,6 +450,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D168471825CAF6D2002BDC3F /* WordOfTheDayWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D168473F25CAF6DB002BDC3F /* Build configuration list for PBXNativeTarget "WordOfTheDayWatchApp" */;
+			buildPhases = (
+				D168471725CAF6D2002BDC3F /* Resources */,
+				D168473E25CAF6DB002BDC3F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D168472525CAF6D8002BDC3F /* PBXTargetDependency */,
+			);
+			name = WordOfTheDayWatchApp;
+			productName = WordOfTheDayWatchApp;
+			productReference = D168471925CAF6D2002BDC3F /* WordOfTheDayWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D168472125CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D168473B25CAF6DB002BDC3F /* Build configuration list for PBXNativeTarget "WordOfTheDayWatchApp Extension" */;
+			buildPhases = (
+				D168471E25CAF6D8002BDC3F /* Sources */,
+				D168471F25CAF6D8002BDC3F /* Frameworks */,
+				D168472025CAF6D8002BDC3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WordOfTheDayWatchApp Extension";
+			productName = "WordOfTheDayWatchApp Extension";
+			productReference = D168472225CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		D1B1350625B0B73E00B75A8B /* WordOfTheDay */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1B1351625B0B74300B75A8B /* Build configuration list for PBXNativeTarget "WordOfTheDay" */;
@@ -296,6 +499,7 @@
 			);
 			dependencies = (
 				D1D5027625B2052200F5EE51 /* PBXTargetDependency */,
+				D168473925CAF6DB002BDC3F /* PBXTargetDependency */,
 			);
 			name = WordOfTheDay;
 			packageProductDependencies = (
@@ -327,9 +531,15 @@
 		D1B134FF25B0B73E00B75A8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					D168471825CAF6D2002BDC3F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D168472125CAF6D8002BDC3F = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					D1B1350625B0B73E00B75A8B = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -355,11 +565,32 @@
 			targets = (
 				D1B1350625B0B73E00B75A8B /* WordOfTheDay */,
 				D1D5026825B2051F00F5EE51 /* WordOfTheDayWidgetExtension */,
+				D168471825CAF6D2002BDC3F /* WordOfTheDayWatchApp */,
+				D168472125CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D168471725CAF6D2002BDC3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16847AD25CAFAF1002BDC3F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D168472025CAF6D8002BDC3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D168473525CAF6DB002BDC3F /* Preview Assets.xcassets in Resources */,
+				D168478925CAF7D4002BDC3F /* PushNotificationPayload.apns in Resources */,
+				D168478825CAF7D4002BDC3F /* Localizable.strings in Resources */,
+				D168478A25CAF7D4002BDC3F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1B1350525B0B73E00B75A8B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,6 +613,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D168471E25CAF6D8002BDC3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D168477025CAF72C002BDC3F /* WordOfTheDayView.swift in Sources */,
+				D168476C25CAF72C002BDC3F /* NotificationView.swift in Sources */,
+				D168476825CAF72C002BDC3F /* BodyStyle.swift in Sources */,
+				D168476625CAF72C002BDC3F /* SubTitleStyle.swift in Sources */,
+				D168476D25CAF72C002BDC3F /* WordOfTheDayWatchAppApp.swift in Sources */,
+				D168476925CAF72C002BDC3F /* NotificationController.swift in Sources */,
+				D168477125CAF72C002BDC3F /* WordOfTheDayViewModel.swift in Sources */,
+				D168476425CAF72B002BDC3F /* TitleStyle.swift in Sources */,
+				D168476225CAF72B002BDC3F /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1B1350325B0B73E00B75A8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,6 +664,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D168472525CAF6D8002BDC3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D168472125CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension */;
+			targetProxy = D168472425CAF6D8002BDC3F /* PBXContainerItemProxy */;
+		};
+		D168473925CAF6DB002BDC3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D168471825CAF6D2002BDC3F /* WordOfTheDayWatchApp */;
+			targetProxy = D168473825CAF6DB002BDC3F /* PBXContainerItemProxy */;
+		};
 		D1D5027625B2052200F5EE51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D1D5026825B2051F00F5EE51 /* WordOfTheDayWidgetExtension */;
@@ -425,6 +682,98 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D168473C25CAF6DB002BDC3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"WordOfTheDayWatchApp Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NPHFRGDN5J;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WordOfTheDayWatchApp Extension/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		D168473D25CAF6DB002BDC3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"WordOfTheDayWatchApp Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NPHFRGDN5J;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WordOfTheDayWatchApp Extension/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		D168474025CAF6DB002BDC3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = NPHFRGDN5J;
+				IBSC_MODULE = WordOfTheDayWatchApp_Extension;
+				INFOPLIST_FILE = WordOfTheDayWatchApp/Resources/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		D168474125CAF6DB002BDC3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = NPHFRGDN5J;
+				IBSC_MODULE = WordOfTheDayWatchApp_Extension;
+				INFOPLIST_FILE = WordOfTheDayWatchApp/Resources/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
 		D1B1351425B0B74300B75A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -548,6 +897,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"WordOfTheDay/Preview Content\"";
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				ENABLE_PREVIEWS = YES;
@@ -571,6 +921,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"WordOfTheDay/Preview Content\"";
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				ENABLE_PREVIEWS = YES;
@@ -593,6 +944,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				INFOPLIST_FILE = WordOfTheDayWidget/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -615,6 +967,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				INFOPLIST_FILE = WordOfTheDayWidget/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -634,6 +987,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D168473B25CAF6DB002BDC3F /* Build configuration list for PBXNativeTarget "WordOfTheDayWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D168473C25CAF6DB002BDC3F /* Debug */,
+				D168473D25CAF6DB002BDC3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D168473F25CAF6DB002BDC3F /* Build configuration list for PBXNativeTarget "WordOfTheDayWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D168474025CAF6DB002BDC3F /* Debug */,
+				D168474125CAF6DB002BDC3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1B1350225B0B73E00B75A8B /* Build configuration list for PBXProject "WordOfTheDay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
