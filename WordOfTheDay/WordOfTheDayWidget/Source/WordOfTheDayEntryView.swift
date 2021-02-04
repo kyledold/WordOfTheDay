@@ -49,6 +49,7 @@ struct WordOfTheDayWidgetEntryView_Preview: PreviewProvider {
     static var previews: some View {
         return WordOfTheDayWidgetEntryView(
             viewModel: WordOfTheDayViewModel(
+                date: Date(),
                 wordOfTheDay: WordOfTheDayWidgetProvider.sampleWordOfTheDay,
                 configuration: ConfigurationIntent()
             )
