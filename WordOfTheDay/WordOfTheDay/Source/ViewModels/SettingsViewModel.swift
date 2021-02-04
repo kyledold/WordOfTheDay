@@ -10,6 +10,9 @@ import Foundation
 
 class SettingsViewModel: ObservableObject {
 
+    let title = LocalizedStringKey("settings.title")
+    let closeText = LocalizedStringKey("settings.close")
+    
     @Published private(set) var items: [SettingItem] = [.feedback, .openSource]
 
     let feedbackURL = URL(string: "mailto:kdold02@gmail.com")!
@@ -22,15 +25,15 @@ enum SettingItem: Int {
 
     var title: LocalizedStringKey {
         switch self {
-        case .feedback: return LocalizedStringKey("home.feedback.title")
-        case .openSource: return LocalizedStringKey("home.open_source.title")
+        case .feedback: return LocalizedStringKey("settings.feedback.title")
+        case .openSource: return LocalizedStringKey("settings.open_source.title")
         }
     }
 
     var subtitle: LocalizedStringKey {
         switch self {
-        case .feedback: return LocalizedStringKey("home.feedback.subtitle")
-        case .openSource: return LocalizedStringKey("home.open_source.subtitle")
+        case .feedback: return LocalizedStringKey("settings.feedback.subtitle")
+        case .openSource: return LocalizedStringKey("settings.open_source.subtitle")
         }
     }
 

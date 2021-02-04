@@ -18,7 +18,8 @@ struct SettingRow: View {
 
             VStack(alignment: .leading, spacing: 3.0) {
                 Text(item.title)
-                    .modifier(TitleStyle())
+                    .font(.body)
+                    .foregroundColor(.primary)
 
                 Text(item.subtitle)
                     .modifier(SubTitleStyle())

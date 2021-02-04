@@ -11,8 +11,9 @@ struct TitleStyle: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            .font(.body)
+            .font(.title)
             .foregroundColor(.primary)
+            .minimumScaleFactor(0.1)
             .lineLimit(1)
     }
 }

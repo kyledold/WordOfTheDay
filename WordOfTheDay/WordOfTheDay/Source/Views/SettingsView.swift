@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     
     @ObservedObject var viewModel: SettingsViewModel
+    @Binding var showingSettings: Bool
     
     var body: some View {
         NavigationView {
@@ -25,7 +26,14 @@ struct SettingsView: View {
                 }
                 .listStyle(InsetGroupedListStyle())
             }
-            .navigationBarTitle(Text(LocalizedStringKey("app.title")), displayMode: .inline)
+            .navigationBarTitle(Text(viewModel.title), displayMode: .inline)
+            .navigationBarItems(leading:
+                Button(action: {
+                    self.showingSettings.toggle()
+                }) {
+                    Text(viewModel.closeText)
+                }
+            )
         }
     }
     
@@ -45,6 +53,6 @@ struct SettingsView: View {
 
 struct SettingsView_Preview: PreviewProvider {
     static var previews: some View {
-        SettingsView(viewModel: SettingsViewModel())
+        SettingsView(viewModel: SettingsViewModel(), showingSettings: .constant(true))
     }
 }
