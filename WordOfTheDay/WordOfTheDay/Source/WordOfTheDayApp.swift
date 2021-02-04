@@ -11,7 +11,7 @@ import SwiftUI
 struct WordOfTheDayApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView(viewModel: .init())
+            SettingsView(viewModel: .init())
         }
     }
 }

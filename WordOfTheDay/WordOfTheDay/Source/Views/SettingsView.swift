@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  SettingsView.swift
 //  WordOfTheDay
 //
 //  Created by Kyle Dold on 14/01/2021.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct SettingsView: View {
     
-    @ObservedObject var viewModel: HomeViewModel
+    @ObservedObject var viewModel: SettingsViewModel
     
     var body: some View {
         NavigationView {
@@ -18,7 +18,7 @@ struct HomeView: View {
                     Section {
                         ForEach(viewModel.items, id: \.rawValue) { item in
                             Button(action: { handleTapOnItem(item) }) {
-                                HomeRow(item: item)
+                                SettingRow(item: item)
                             }
                         }
                     }
@@ -29,7 +29,7 @@ struct HomeView: View {
         }
     }
     
-    private func handleTapOnItem(_ item: HomeItem) {
+    private func handleTapOnItem(_ item: SettingItem) {
         switch item {
         case .feedback: openURL(viewModel.feedbackURL)
         case .openSource: openURL(viewModel.gitHubRepoURL)
@@ -43,8 +43,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Preview: PreviewProvider {
+struct SettingsView_Preview: PreviewProvider {
     static var previews: some View {
-        HomeView(viewModel: HomeViewModel())
+        SettingsView(viewModel: SettingsViewModel())
     }
 }

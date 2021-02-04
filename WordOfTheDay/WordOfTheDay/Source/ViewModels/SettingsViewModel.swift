@@ -1,13 +1,22 @@
 //
-//  HomeItem.swift
+//  SettingsViewModel.swift
 //  WordOfTheDay
 //
 //  Created by Kyle Dold on 19/01/2021.
 //
 
 import SwiftUI
+import Foundation
 
-enum HomeItem: Int {
+class SettingsViewModel: ObservableObject {
+
+    @Published private(set) var items: [SettingItem] = [.feedback, .openSource]
+
+    let feedbackURL = URL(string: "mailto:kdold02@gmail.com")!
+    let gitHubRepoURL = URL(string: "https://github.com/kyledold/WordOfTheDay")!
+}
+
+enum SettingItem: Int {
 
     case feedback, openSource
 
