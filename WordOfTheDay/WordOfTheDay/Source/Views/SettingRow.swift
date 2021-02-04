@@ -1,5 +1,5 @@
 //
-//  HomeRow.swift
+//  SettingRow.swift
 //  WordOfTheDay
 //
 //  Created by Kyle Dold on 19/01/2021.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct HomeRow: View {
+struct SettingRow: View {
 
-    let item: HomeItem
+    let item: SettingItem
 
     var body: some View {
         HStack(alignment: .center, spacing: 16.0) {
@@ -18,7 +18,8 @@ struct HomeRow: View {
 
             VStack(alignment: .leading, spacing: 3.0) {
                 Text(item.title)
-                    .modifier(TitleStyle())
+                    .font(.body)
+                    .foregroundColor(.primary)
 
                 Text(item.subtitle)
                     .modifier(SubTitleStyle())

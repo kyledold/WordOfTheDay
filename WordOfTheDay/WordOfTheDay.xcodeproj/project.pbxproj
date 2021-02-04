@@ -10,6 +10,9 @@
 		D102304B25B603D800C1AD0C /* SubTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102301625B6005700C1AD0C /* SubTitleStyle.swift */; };
 		D102304D25B603DB00C1AD0C /* TitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102300C25B6003400C1AD0C /* TitleStyle.swift */; };
 		D102304F25B603DD00C1AD0C /* BodyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102301B25B6008300C1AD0C /* BodyStyle.swift */; };
+		D138C93A25CC055D00E67FF6 /* WordOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138C93925CC055D00E67FF6 /* WordOfTheDayView.swift */; };
+		D138C93E25CC05BF00E67FF6 /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138C93D25CC05BF00E67FF6 /* WordOfTheDayViewModel.swift */; };
+		D138C94225CC062600E67FF6 /* BodyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138C94125CC062600E67FF6 /* BodyStyle.swift */; };
 		D168470D25CACC6E002BDC3F /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11F4B8925BD99A1009F8950 /* NetworkKit.framework */; };
 		D168470E25CACC6E002BDC3F /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D11F4B8925BD99A1009F8950 /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D168471525CACCBC002BDC3F /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D168471425CACCBC002BDC3F /* NetworkKit.framework */; };
@@ -33,14 +36,13 @@
 		D168483725CB13E5002BDC3F /* WordOfTheDayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D168483925CB13E5002BDC3F /* WordOfTheDayWidget.intentdefinition */; };
 		D168484C25CB1719002BDC3F /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D168479A25CAF846002BDC3F /* NetworkKit.framework */; };
 		D168484D25CB1719002BDC3F /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D168479A25CAF846002BDC3F /* NetworkKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D1732A9925B747C1009E55E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732A9825B747C1009E55E8 /* HomeViewModel.swift */; };
-		D1732A9D25B74841009E55E8 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732A9C25B74841009E55E8 /* HomeItem.swift */; };
-		D1732AA425B74B22009E55E8 /* HomeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AA325B74B22009E55E8 /* HomeRow.swift */; };
+		D1732A9925B747C1009E55E8 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732A9825B747C1009E55E8 /* SettingsViewModel.swift */; };
+		D1732AA425B74B22009E55E8 /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AA325B74B22009E55E8 /* SettingRow.swift */; };
 		D1732AA925B74B7A009E55E8 /* TitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AA825B74B7A009E55E8 /* TitleStyle.swift */; };
 		D1732AAC25B74D05009E55E8 /* SubTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */; };
 		D1732AB325B74E18009E55E8 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AB225B74E18009E55E8 /* ImageExtension.swift */; };
 		D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */; };
-		D1B1350D25B0B73E00B75A8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350C25B0B73E00B75A8B /* HomeView.swift */; };
+		D1B1350D25B0B73E00B75A8B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350C25B0B73E00B75A8B /* SettingsView.swift */; };
 		D1B1350F25B0B74300B75A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1350E25B0B74300B75A8B /* Assets.xcassets */; };
 		D1B1351225B0B74300B75A8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1351125B0B74300B75A8B /* Preview Assets.xcassets */; };
 		D1B1351E25B0B86900B75A8B /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1351D25B0B86900B75A8B /* BundleExtension.swift */; };
@@ -143,6 +145,9 @@
 		D102301625B6005700C1AD0C /* SubTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleStyle.swift; sourceTree = "<group>"; };
 		D102301B25B6008300C1AD0C /* BodyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyStyle.swift; sourceTree = "<group>"; };
 		D11F4B8925BD99A1009F8950 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D138C93925CC055D00E67FF6 /* WordOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayView.swift; sourceTree = "<group>"; };
+		D138C93D25CC05BF00E67FF6 /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
+		D138C94125CC062600E67FF6 /* BodyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyStyle.swift; sourceTree = "<group>"; };
 		D168471425CACCBC002BDC3F /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D168471925CAF6D2002BDC3F /* WordOfTheDayWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDayWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D168471D25CAF6D7002BDC3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -165,15 +170,14 @@
 		D168479A25CAF846002BDC3F /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D168483825CB13E5002BDC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/WordOfTheDayWidget.intentdefinition; sourceTree = "<group>"; };
 		D168483E25CB13E9002BDC3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/WordOfTheDayWidget.strings; sourceTree = "<group>"; };
-		D1732A9825B747C1009E55E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		D1732A9C25B74841009E55E8 /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
-		D1732AA325B74B22009E55E8 /* HomeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRow.swift; sourceTree = "<group>"; };
+		D1732A9825B747C1009E55E8 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		D1732AA325B74B22009E55E8 /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
 		D1732AA825B74B7A009E55E8 /* TitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleStyle.swift; sourceTree = "<group>"; };
 		D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleStyle.swift; sourceTree = "<group>"; };
 		D1732AB225B74E18009E55E8 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		D1B1350725B0B73E00B75A8B /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayApp.swift; sourceTree = "<group>"; };
-		D1B1350C25B0B73E00B75A8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D1B1350C25B0B73E00B75A8B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D1B1350E25B0B74300B75A8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1B1351125B0B74300B75A8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1B1351325B0B74300B75A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -229,6 +233,15 @@
 				D102301B25B6008300C1AD0C /* BodyStyle.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		D138C93025CBEAF600E67FF6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D1732A9825B747C1009E55E8 /* SettingsViewModel.swift */,
+				D138C93D25CC05BF00E67FF6 /* WordOfTheDayViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		D168471A25CAF6D2002BDC3F /* WordOfTheDayWatchApp */ = {
@@ -294,8 +307,8 @@
 			isa = PBXGroup;
 			children = (
 				D168475B25CAF72B002BDC3F /* TitleStyle.swift */,
-				D168475D25CAF72B002BDC3F /* SubTitleStyle.swift */,
 				D168475325CAF72B002BDC3F /* BodyStyle.swift */,
+				D168475D25CAF72B002BDC3F /* SubTitleStyle.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -329,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				D1732AA825B74B7A009E55E8 /* TitleStyle.swift */,
+				D138C94125CC062600E67FF6 /* BodyStyle.swift */,
 				D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */,
 			);
 			path = Modifiers;
@@ -339,7 +353,8 @@
 			children = (
 				D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */,
 				D1B1351C25B0B84100B75A8B /* Extensions */,
-				D1B1351A25B0B81D00B75A8B /* Home */,
+				D1B1351A25B0B81D00B75A8B /* Views */,
+				D138C93025CBEAF600E67FF6 /* ViewModels */,
 				D1732AA625B74B49009E55E8 /* Modifiers */,
 			);
 			path = Source;
@@ -386,15 +401,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D1B1351A25B0B81D00B75A8B /* Home */ = {
+		D1B1351A25B0B81D00B75A8B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D1B1350C25B0B73E00B75A8B /* HomeView.swift */,
-				D1732A9825B747C1009E55E8 /* HomeViewModel.swift */,
-				D1732A9C25B74841009E55E8 /* HomeItem.swift */,
-				D1732AA325B74B22009E55E8 /* HomeRow.swift */,
+				D138C93925CC055D00E67FF6 /* WordOfTheDayView.swift */,
+				D1B1350C25B0B73E00B75A8B /* SettingsView.swift */,
+				D1732AA325B74B22009E55E8 /* SettingRow.swift */,
 			);
-			path = Home;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D1B1351B25B0B82A00B75A8B /* Resources */ = {
@@ -647,14 +661,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1732AA425B74B22009E55E8 /* HomeRow.swift in Sources */,
+				D138C93A25CC055D00E67FF6 /* WordOfTheDayView.swift in Sources */,
+				D1732AA425B74B22009E55E8 /* SettingRow.swift in Sources */,
 				D168483625CB13E5002BDC3F /* WordOfTheDayWidget.intentdefinition in Sources */,
-				D1732A9D25B74841009E55E8 /* HomeItem.swift in Sources */,
+				D138C93E25CC05BF00E67FF6 /* WordOfTheDayViewModel.swift in Sources */,
 				D1732AB325B74E18009E55E8 /* ImageExtension.swift in Sources */,
-				D1B1350D25B0B73E00B75A8B /* HomeView.swift in Sources */,
+				D138C94225CC062600E67FF6 /* BodyStyle.swift in Sources */,
+				D1B1350D25B0B73E00B75A8B /* SettingsView.swift in Sources */,
 				D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */,
 				D1732AAC25B74D05009E55E8 /* SubTitleStyle.swift in Sources */,
-				D1732A9925B747C1009E55E8 /* HomeViewModel.swift in Sources */,
+				D1732A9925B747C1009E55E8 /* SettingsViewModel.swift in Sources */,
 				D1732AA925B74B7A009E55E8 /* TitleStyle.swift in Sources */,
 				D1B1351E25B0B86900B75A8B /* BundleExtension.swift in Sources */,
 			);
