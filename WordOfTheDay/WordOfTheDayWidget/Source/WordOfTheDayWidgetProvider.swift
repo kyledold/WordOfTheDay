@@ -17,24 +17,23 @@ struct WordOfTheDayWidgetProvider: IntentTimelineProvider {
     private let calendar = Calendar.current
     
     func placeholder(in context: Context) -> ViewModel {
-        ViewModel(wordOfTheDay: Self.sampleWordOfTheDay, configuration: ConfigurationIntent())
+        ViewModel(date: Date(), wordOfTheDay: Self.sampleWordOfTheDay, configuration: ConfigurationIntent())
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (ViewModel) -> Void) {
-        let entry = ViewModel(wordOfTheDay: Self.sampleWordOfTheDay, configuration: configuration)
+        let entry = ViewModel(date: Date(), wordOfTheDay: Self.sampleWordOfTheDay, configuration: configuration)
         completion(entry)
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<ViewModel>) -> Void) {
         // Generate a timeline with one entry that refreshes at midnight.
         let currentDate = Date()
-        let startOfDay = calendar.startOfDay(for: currentDate)
-        let endOfDay = calendar.date(byAdding: .day, value: 1, to: startOfDay)!
+        let endOfDay = calendar.date(byAdding: .day, value: 1, to: currentDate)!
         
         API.getWordOfTheDay(for: currentDate) { result in
             switch result {
             case .success(let wordOfTheDay):
-                let entry = ViewModel(wordOfTheDay: wordOfTheDay, configuration: configuration)
+                let entry = ViewModel(date: currentDate, wordOfTheDay: wordOfTheDay, configuration: configuration)
                 let timeline = Timeline(entries: [entry], policy: .after(endOfDay))
                 completion(timeline)
                 

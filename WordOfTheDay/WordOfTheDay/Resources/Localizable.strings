@@ -7,7 +7,12 @@
 */
 
 "app.title" = "Word Of The Day: English";
-"home.feedback.title" = "Feedback";
-"home.feedback.subtitle" = "kdold02@gmail.com";
-"home.open_source.title" = "Source code";
-"home.open_source.subtitle" = "Feel free to browse or contribute";
+"settings.close" = "Close";
+"settings.title" = "Settings";
+"settings.feedback.title" = "Feedback";
+"settings.feedback.subtitle" = "kdold02@gmail.com";
+"settings.open_source.title" = "Source code";
+"settings.open_source.subtitle" = "Feel free to browse or contribute";
+"word_of_the_day.definition" = "DEFINITION";
+"word_of_the_day.example" = "EXAMPLE";
+"word_of_the_day.origin" = "ORIGIN";

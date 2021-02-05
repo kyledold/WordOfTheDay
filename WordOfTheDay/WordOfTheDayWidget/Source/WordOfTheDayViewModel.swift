@@ -9,7 +9,9 @@ import Foundation
 import NetworkKit
 import WidgetKit
 
-class WordOfTheDayViewModel: ObservableObject {
+class WordOfTheDayViewModel: ObservableObject, TimelineEntry {
+    
+    var date: Date
     
     @Published var word = ""
     @Published var wordDescription = ""
@@ -19,7 +21,8 @@ class WordOfTheDayViewModel: ObservableObject {
     private let publishDate: Date
     private let configuration: ConfigurationIntent
     
-    public init(wordOfTheDay: WordOfTheDayDTO, configuration: ConfigurationIntent) {
+    public init(date: Date, wordOfTheDay: WordOfTheDayDTO, configuration: ConfigurationIntent) {
+        self.date = date
         self.word = wordOfTheDay.word  ?? ""
         self.wordDescription = wordOfTheDay.definitions?.first?.text ?? ""
         self.wordExample = wordOfTheDay.examples?.first?.text ?? ""
@@ -27,9 +30,4 @@ class WordOfTheDayViewModel: ObservableObject {
         self.publishDate = wordOfTheDay.publishDate?.date ?? Date()
         self.configuration = configuration
     }
-}
-
-extension WordOfTheDayViewModel: TimelineEntry {
-    
-    var date: Date { publishDate }
 }

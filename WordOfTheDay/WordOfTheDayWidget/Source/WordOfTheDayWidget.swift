@@ -12,10 +12,10 @@ import Intents
 @main
 struct WordOfTheDayWidget: Widget {
     
-    let kind: String = "WordOfTheDayWidget"
+    static let kind: String = "WordOfTheDayWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: WordOfTheDayWidgetProvider()) { viewModel in
+        IntentConfiguration(kind: WordOfTheDayWidget.kind, intent: ConfigurationIntent.self, provider: WordOfTheDayWidgetProvider()) { viewModel in
             WordOfTheDayWidgetEntryView(viewModel: viewModel)
         }
         .configurationDisplayName(LocalizedStringKey("display_name"))

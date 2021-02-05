@@ -1,8 +1,8 @@
 //
 //  WordOfTheDayViewModel.swift
-//  WordOfTheDayWatchApp WatchKit Extension
+//  WordOfTheDay
 //
-//  Created by Kyle Dold on 25/01/2021.
+//  Created by Kyle Dold on 04/02/2021.
 //
 
 import NetworkKit
@@ -10,6 +10,7 @@ import SwiftUI
 
 class WordOfTheDayViewModel: ObservableObject {
     
+    let title = LocalizedStringKey("app.title")
     let definitionText = LocalizedStringKey("word_of_the_day.definition")
     let exampleText = LocalizedStringKey("word_of_the_day.example")
     let originText = LocalizedStringKey("word_of_the_day.origin")
@@ -37,3 +38,4 @@ class WordOfTheDayViewModel: ObservableObject {
         }
     }
 }
+
