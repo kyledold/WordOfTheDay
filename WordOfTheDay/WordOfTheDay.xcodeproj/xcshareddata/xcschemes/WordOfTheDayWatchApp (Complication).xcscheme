@@ -55,8 +55,10 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "32">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Word Of The Day: English">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D168471825CAF6D2002BDC3F"
@@ -64,7 +66,7 @@
             BlueprintName = "WordOfTheDayWatchApp"
             ReferencedContainer = "container:WordOfTheDay.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -73,8 +75,10 @@
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "32">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Word Of The Day: English">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D168471825CAF6D2002BDC3F"
@@ -82,7 +86,16 @@
             BlueprintName = "WordOfTheDayWatchApp"
             ReferencedContainer = "container:WordOfTheDay.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D168471825CAF6D2002BDC3F"
+            BuildableName = "WordOfTheDayWatchApp.app"
+            BlueprintName = "WordOfTheDayWatchApp"
+            ReferencedContainer = "container:WordOfTheDay.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
