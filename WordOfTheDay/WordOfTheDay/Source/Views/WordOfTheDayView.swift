@@ -14,49 +14,55 @@ struct WordOfTheDayView: View {
 
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading, spacing: 20) {
-                
-                Text(viewModel.word)
-                    .modifier(TitleStyle())
-                
-                VStack(alignment: .leading) {
-                    Text(viewModel.definitionText)
-                        .modifier(SubTitleStyle())
-                    Text(viewModel.wordDescription)
-                        .modifier(BodyStyle())
+            if viewModel.word == "" {
+                ProgressView()
+            } else {
+                VStack(alignment: .leading, spacing: 20) {
+                    
+                    Text(viewModel.word)
+                        .modifier(TitleStyle())
+                    
+                    VStack(alignment: .leading) {
+                        Text(viewModel.definitionText)
+                            .modifier(SubTitleStyle())
+                        Text(viewModel.wordDescription)
+                            .modifier(BodyStyle())
+                    }
+                    
+                    VStack(alignment: .leading) {
+                        Text(viewModel.exampleText)
+                            .modifier(SubTitleStyle())
+                        Text(viewModel.wordExample)
+                            .modifier(BodyStyle())
+                    }
+                    
+                    VStack(alignment: .leading) {
+                        Text(viewModel.originText)
+                            .modifier(SubTitleStyle())
+                        Text(viewModel.origin)
+                            .modifier(BodyStyle())
+                    }
+                    Spacer()
                 }
-                
-                VStack(alignment: .leading) {
-                    Text(viewModel.exampleText)
-                        .modifier(SubTitleStyle())
-                    Text(viewModel.wordExample)
-                        .modifier(BodyStyle())
-                }
-                
-                VStack(alignment: .leading) {
-                    Text(viewModel.originText)
-                        .modifier(SubTitleStyle())
-                    Text(viewModel.origin)
-                        .modifier(BodyStyle())
-                }
-                
-                Spacer()
+                .padding()
+                .navigationBarTitle(Text(viewModel.title), displayMode: .inline)
+                .navigationBarItems(trailing:
+                    Button(action: {
+                        self.showingSettings.toggle()
+                    }) {
+                        Image("Settings")
+                            .resizable()
+                            .frame(width: 34, height: 34)
+                            .colorMultiply(.accentColor)
+                    }.sheet(isPresented: $showingSettings, content: {
+                        SettingsView(viewModel: .init(), showingSettings: self.$showingSettings)
+                    })
+                )
             }
-            .padding()
-            .navigationBarTitle(Text(viewModel.title), displayMode: .inline)
-            .navigationBarItems(trailing:
-                Button(action: {
-                    self.showingSettings.toggle()
-                }) {
-                    Image("Settings")
-                        .resizable()
-                        .frame(width: 34, height: 34)
-                        .colorMultiply(.accentColor)
-                }.sheet(isPresented: $showingSettings, content: {
-                    SettingsView(viewModel: .init(), showingSettings: self.$showingSettings)
-                })
-            )
         }
+        .onAppear(perform: {
+            viewModel.fetchData()
+        })
     }
 }
 
