@@ -33,8 +33,8 @@ struct WordOfTheDayWidgetProvider: IntentTimelineProvider {
         API.getWordOfTheDay(for: currentDate) { result in
             switch result {
             case .success(let wordOfTheDay):
-                let entry = ViewModel(date: endOfDay, wordOfTheDay: wordOfTheDay, configuration: configuration)
-                let timeline = Timeline(entries: [entry], policy: .atEnd)
+                let entry = ViewModel(date: currentDate, wordOfTheDay: wordOfTheDay, configuration: configuration)
+                let timeline = Timeline(entries: [entry], policy: .after(endOfDay))
                 completion(timeline)
                 
             case .failure:
