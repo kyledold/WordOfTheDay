@@ -20,11 +20,7 @@ class WordOfTheDayViewModel: ObservableObject {
     @Published var wordExample = ""
     @Published var origin = ""
     
-    init() {
-        loadData()
-    }
-    
-    private func loadData() {
+    func fetchData() {
         
         API.getWordOfTheDay(for: Date()) { [weak self] result in
             guard let self = self else { return }

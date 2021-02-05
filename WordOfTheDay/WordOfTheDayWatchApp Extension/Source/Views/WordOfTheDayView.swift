@@ -12,33 +12,41 @@ struct WordOfTheDayView: View {
     @ObservedObject var viewModel: WordOfTheDayViewModel
     
     var body: some View {
-        ScrollView(.vertical) {
-            VStack(alignment: .leading, spacing: 15) {
-                
-                Text(viewModel.word)
-                    .modifier(TitleStyle())
-                
-                VStack(alignment: .leading) {
-                    Text(LocalizedStringKey("word_of_the_day.definition"))
-                        .modifier(SubTitleStyle())
-                    Text(viewModel.wordDescription)
-                        .modifier(BodyStyle())
+        VStack {
+            if viewModel.word == "" {
+                ProgressView()
+            } else {
+                ScrollView(.vertical) {
+                    VStack(alignment: .leading, spacing: 15) {
+                        Text(viewModel.word)
+                            .modifier(TitleStyle())
+
+                        VStack(alignment: .leading) {
+                            Text(viewModel.definitionText)
+                                .modifier(SubTitleStyle())
+                            Text(viewModel.wordDescription)
+                                .modifier(BodyStyle())
+                        }
+                        
+                        VStack(alignment: .leading) {
+                            Text(viewModel.exampleText)
+                                .modifier(SubTitleStyle())
+                            Text(viewModel.wordExample)
+                                .modifier(BodyStyle())
+                        }
+                        VStack(alignment: .leading) {
+                            Text(viewModel.originText)
+                                .modifier(SubTitleStyle())
+                            Text(viewModel.origin)
+                                .modifier(BodyStyle())
+                        }
+                        Spacer()
+                    }
+                    .padding()
                 }
-                
-                VStack(alignment: .leading) {
-                    Text(LocalizedStringKey("word_of_the_day.example"))
-                        .modifier(SubTitleStyle())
-                    Text(viewModel.wordExample)
-                        .modifier(BodyStyle())
-                }
-                VStack(alignment: .leading) {
-                    Text(LocalizedStringKey("word_of_the_day.origin"))
-                        .modifier(SubTitleStyle())
-                    Text(viewModel.origin)
-                        .modifier(BodyStyle())
-                }
-                Spacer()
-            }.padding()
+            }
+        }.onAppear() {
+            viewModel.fetchData()
         }
     }
 }

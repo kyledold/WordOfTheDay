@@ -238,8 +238,8 @@
 		D138C93025CBEAF600E67FF6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				D1732A9825B747C1009E55E8 /* SettingsViewModel.swift */,
 				D138C93D25CC05BF00E67FF6 /* WordOfTheDayViewModel.swift */,
+				D1732A9825B747C1009E55E8 /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";

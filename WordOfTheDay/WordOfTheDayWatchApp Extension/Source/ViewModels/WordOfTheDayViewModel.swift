@@ -10,16 +10,16 @@ import SwiftUI
 
 class WordOfTheDayViewModel: ObservableObject {
     
+    let definitionText = LocalizedStringKey("word_of_the_day.definition")
+    let exampleText = LocalizedStringKey("word_of_the_day.example")
+    let originText = LocalizedStringKey("word_of_the_day.origin")
+    
     @Published var word = ""
     @Published var wordDescription = ""
     @Published var wordExample = ""
     @Published var origin = ""
     
-    init() {
-        loadData()
-    }
-    
-    private func loadData() {
+    func fetchData() {
         
         API.getWordOfTheDay(for: Date()) { [weak self] result in
             guard let self = self else { return }
