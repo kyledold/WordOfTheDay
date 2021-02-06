@@ -45,7 +45,14 @@ struct WordOfTheDayView: View {
                     .padding()
                 }
             }
-        }.onAppear() {
+            
+        }
+        .onReceive(NotificationCenter.default.publisher(for: WKExtension.applicationWillEnterForegroundNotification)) { _ in
+            print("WordOfTheDayView: willEnterForegroundNotification")
+            viewModel.fetchData()
+        }
+        .onAppear {
+            print("WordOfTheDayView: onAppear")
             viewModel.fetchData()
         }
     }

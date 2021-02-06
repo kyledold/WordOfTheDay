@@ -15,32 +15,36 @@ struct WordOfTheDayWidgetEntryView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            
-            Text(viewModel.word)
-                .modifier(TitleStyle())
-            
-            VStack(alignment: .leading) {
-                Text(LocalizedStringKey("entry_view.definition"))
-                    .modifier(SubTitleStyle())
-                Text(viewModel.wordDescription)
+            if viewModel.word == "" {
+                Text(viewModel.errorText)
                     .modifier(BodyStyle())
-            }
-            
-            if case .systemLarge = widgetFamily {
+            } else {
+                Text(viewModel.word)
+                    .modifier(TitleStyle())
+                
                 VStack(alignment: .leading) {
-                    Text(LocalizedStringKey("entry_view.example"))
+                    Text(viewModel.definitionText)
                         .modifier(SubTitleStyle())
-                    Text(viewModel.wordExample)
+                    Text(viewModel.wordDescription)
                         .modifier(BodyStyle())
                 }
-                VStack(alignment: .leading) {
-                    Text(LocalizedStringKey("entry_view.origin"))
-                        .modifier(SubTitleStyle())
-                    Text(viewModel.origin)
-                        .modifier(BodyStyle())
+                
+                if case .systemLarge = widgetFamily {
+                    VStack(alignment: .leading) {
+                        Text(viewModel.exampleText)
+                            .modifier(SubTitleStyle())
+                        Text(viewModel.wordExample)
+                            .modifier(BodyStyle())
+                    }
+                    VStack(alignment: .leading) {
+                        Text(viewModel.originText)
+                            .modifier(SubTitleStyle())
+                        Text(viewModel.origin)
+                            .modifier(BodyStyle())
+                    }
                 }
+                Spacer()
             }
-            Spacer()
         }.padding()
     }
 }
