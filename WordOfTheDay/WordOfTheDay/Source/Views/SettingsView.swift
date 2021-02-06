@@ -47,6 +47,7 @@ struct SettingsView: View {
     private func openURL(_ url: URL) {
         guard UIApplication.shared.canOpenURL(url) else { return }
         
+        print("SettingsView: openURL \(url.absoluteString)")
         UIApplication.shared.open(url)
     }
 }

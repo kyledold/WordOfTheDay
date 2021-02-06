@@ -57,8 +57,18 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D1D5026825B2051F00F5EE51"
+            BuildableName = "WordOfTheDayWidgetExtension.appex"
+            BlueprintName = "WordOfTheDayWidgetExtension"
+            ReferencedContainer = "container:WordOfTheDay.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D1B1350625B0B73E00B75A8B"
@@ -66,7 +76,7 @@
             BlueprintName = "WordOfTheDay"
             ReferencedContainer = "container:WordOfTheDay.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "_XCWidgetKind"
