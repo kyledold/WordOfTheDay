@@ -34,8 +34,6 @@
 		D16847AD25CAFAF1002BDC3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D168474B25CAF70C002BDC3F /* Assets.xcassets */; };
 		D168483625CB13E5002BDC3F /* WordOfTheDayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D168483925CB13E5002BDC3F /* WordOfTheDayWidget.intentdefinition */; };
 		D168483725CB13E5002BDC3F /* WordOfTheDayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D168483925CB13E5002BDC3F /* WordOfTheDayWidget.intentdefinition */; };
-		D168484C25CB1719002BDC3F /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D168479A25CAF846002BDC3F /* NetworkKit.framework */; };
-		D168484D25CB1719002BDC3F /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D168479A25CAF846002BDC3F /* NetworkKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D1732A9925B747C1009E55E8 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732A9825B747C1009E55E8 /* SettingsViewModel.swift */; };
 		D1732AA425B74B22009E55E8 /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AA325B74B22009E55E8 /* SettingRow.swift */; };
 		D1732AA925B74B7A009E55E8 /* TitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AA825B74B7A009E55E8 /* TitleStyle.swift */; };
@@ -47,6 +45,7 @@
 		D1B1351225B0B74300B75A8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1351125B0B74300B75A8B /* Preview Assets.xcassets */; };
 		D1B1351E25B0B86900B75A8B /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1351D25B0B86900B75A8B /* BundleExtension.swift */; };
 		D1B1353025B0BB1000B75A8B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1B1352F25B0BB1000B75A8B /* Localizable.strings */; };
+		D1BB6D1D25CFF4F400B1ED10 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BB6D1C25CFF4F400B1ED10 /* NetworkKit.framework */; };
 		D1D5026A25B2051F00F5EE51 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D501F725B1FF8A00F5EE51 /* WidgetKit.framework */; };
 		D1D5026B25B2051F00F5EE51 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D501F925B1FF8A00F5EE51 /* SwiftUI.framework */; };
 		D1D5026E25B2051F00F5EE51 /* WordOfTheDayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5026D25B2051F00F5EE51 /* WordOfTheDayWidget.swift */; };
@@ -103,17 +102,6 @@
 				D168472325CAF6D8002BDC3F /* WordOfTheDayWatchApp Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D168484E25CB1719002BDC3F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D168484D25CB1719002BDC3F /* NetworkKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D1732C9425B89B82009E55E8 /* Embed Watch Content */ = {
@@ -183,6 +171,7 @@
 		D1B1351325B0B74300B75A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1B1351D25B0B86900B75A8B /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		D1B1352F25B0BB1000B75A8B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D1BB6D1C25CFF4F400B1ED10 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D501F725B1FF8A00F5EE51 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		D1D501F925B1FF8A00F5EE51 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		D1D5026925B2051F00F5EE51 /* WordOfTheDayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WordOfTheDayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,7 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D168484C25CB1719002BDC3F /* NetworkKit.framework in Frameworks */,
+				D1BB6D1D25CFF4F400B1ED10 /* NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +422,7 @@
 		D1D501F625B1FF8A00F5EE51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB6D1C25CFF4F400B1ED10 /* NetworkKit.framework */,
 				D168479A25CAF846002BDC3F /* NetworkKit.framework */,
 				D168471425CACCBC002BDC3F /* NetworkKit.framework */,
 				D11F4B8925BD99A1009F8950 /* NetworkKit.framework */,
@@ -501,7 +491,6 @@
 				D168471E25CAF6D8002BDC3F /* Sources */,
 				D168471F25CAF6D8002BDC3F /* Frameworks */,
 				D168472025CAF6D8002BDC3F /* Resources */,
-				D168484E25CB1719002BDC3F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -956,7 +945,7 @@
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -982,7 +971,7 @@
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
