@@ -17,29 +17,40 @@ struct WordOfTheDayWidgetProvider: IntentTimelineProvider {
     private let calendar = Calendar.current
     
     func placeholder(in context: Context) -> ViewModel {
-        ViewModel(date: Date(), wordOfTheDay: Self.sampleWordOfTheDay, configuration: ConfigurationIntent())
+        print("WordOfTheDayWidgetProvider: placeholder")
+        return ViewModel(date: Date(), wordOfTheDay: Self.sampleWordOfTheDay, configuration: ConfigurationIntent())
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (ViewModel) -> Void) {
+        print("WordOfTheDayWidgetProvider: getSnapshot")
+        
         let entry = ViewModel(date: Date(), wordOfTheDay: Self.sampleWordOfTheDay, configuration: configuration)
         completion(entry)
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<ViewModel>) -> Void) {
+        print("WordOfTheDayWidgetProvider: getTimeline")
+        
         // Generate a timeline with one entry that refreshes at midnight.
         let currentDate = Date()
-        let endOfDay = calendar.date(byAdding: .day, value: 1, to: currentDate)!
+        let startOfCurrentDate = calendar.startOfDay(for: currentDate)
+        guard let refreshDate = calendar.date(byAdding: .hour, value: 25, to: startOfCurrentDate) else { return }
         
         API.getWordOfTheDay(for: currentDate) { result in
+            var entry: ViewModel
+            
             switch result {
             case .success(let wordOfTheDay):
-                let entry = ViewModel(date: currentDate, wordOfTheDay: wordOfTheDay, configuration: configuration)
-                let timeline = Timeline(entries: [entry], policy: .after(endOfDay))
-                completion(timeline)
+                print("WordOfTheDayWidgetProvider: getTimeline success")
+                entry = ViewModel(date: currentDate, wordOfTheDay: wordOfTheDay, configuration: configuration)
                 
-            case .failure:
-                break
+            case .failure(let error):
+                print("WordOfTheDayWidgetProvider: getTimeline failure \(error.localizedDescription)")
+                entry = ViewModel(date: currentDate, wordOfTheDay: nil, configuration: configuration)
             }
+            
+            let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
+            completion(timeline)
         }
     }
 }
