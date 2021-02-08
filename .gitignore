@@ -82,3 +82,9 @@ fastlane/test_output
 iOSInjectionProject/
 
 NetworkKit/Source/API/Constants.swift
+
+WordOfTheDay/WordOfTheDay.xcodeproj/xcshareddata/xcschemes/WordOfTheDayWatchApp (Complication).xcscheme
+
+WordOfTheDay/WordOfTheDay.xcodeproj/xcshareddata/xcschemes/WordOfTheDayWatchApp (Notification).xcscheme
+
+WordOfTheDay/WordOfTheDay.xcodeproj/xcshareddata/xcschemes/WordOfTheDayWatchApp.xcscheme
