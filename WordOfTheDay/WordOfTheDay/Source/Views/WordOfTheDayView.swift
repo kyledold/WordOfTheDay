@@ -60,9 +60,14 @@ struct WordOfTheDayView: View {
                 )
             }
         }
-        .onAppear(perform: {
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+            print("WordOfTheDayView: willEnterForegroundNotification")
             viewModel.fetchData()
-        })
+        }
+        .onAppear {
+            print("WordOfTheDayView: onAppear")
+            viewModel.fetchData()
+        }
     }
 }
 
