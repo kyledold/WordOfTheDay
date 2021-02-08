@@ -7,6 +7,7 @@
 */
 
 "app.title" = "Word Of The Day: English";
+"app.version.%@" = "Version %@";
 "settings.close" = "Close";
 "settings.title" = "Settings";
 "settings.feedback.title" = "Feedback";

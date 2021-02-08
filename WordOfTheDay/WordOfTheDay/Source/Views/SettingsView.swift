@@ -16,13 +16,14 @@ struct SettingsView: View {
         NavigationView {
             VStack(alignment: .leading, spacing: 20) {
                 List {
-                    Section {
+                    Section(footer: footer) {
                         ForEach(viewModel.items, id: \.rawValue) { item in
                             Button(action: { handleTapOnItem(item) }) {
                                 SettingRow(item: item)
                             }
                         }
                     }
+                    
                 }
                 .listStyle(InsetGroupedListStyle())
             }
@@ -35,6 +36,12 @@ struct SettingsView: View {
                 }
             )
         }
+    }
+    
+    var footer: some View {
+        Bundle.version
+            .map { Text("app.version.\($0)") }
+            .modifier(FooterStyle())
     }
     
     private func handleTapOnItem(_ item: SettingItem) {

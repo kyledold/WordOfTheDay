@@ -4,10 +4,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Word Of The Day
+ <a href="https://apps.apple.com/gb/app/word-of-the-day-english/id1551946328"><img align="left" src="Images/app-store-badge.svg" alt="App Store Badge"></a><br><br>
 <p align="center">
    <p align="left">
     iOS Widget and WatchOS app made in SwiftUI that displays a random word of the day with description and example of usuage.
   </p>
+ 
+
   <div style="text-align: center">
   <img src="Images/preview_medium.png" width="30%" alt="Logo" >
   <img src="Images/preview_large.png" width="30%"alt="Logo" >
