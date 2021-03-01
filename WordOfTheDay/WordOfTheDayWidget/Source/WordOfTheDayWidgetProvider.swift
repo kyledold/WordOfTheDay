@@ -31,10 +31,9 @@ struct WordOfTheDayWidgetProvider: IntentTimelineProvider {
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<ViewModel>) -> Void) {
         print("WordOfTheDayWidgetProvider: getTimeline")
         
-        // Generate a timeline with one entry that refreshes at midnight.
         let currentDate = Date()
         let startOfCurrentDate = calendar.startOfDay(for: currentDate)
-        guard let refreshDate = calendar.date(byAdding: .day, value: 1, to: startOfCurrentDate) else { return }
+        guard let refreshDate = calendar.date(byAdding: .hour, value: 4, to: startOfCurrentDate) else { return }
         
         API.getWordOfTheDay(for: currentDate) { result in
             var entry: ViewModel
