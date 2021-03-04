@@ -32,8 +32,7 @@ struct WordOfTheDayWidgetProvider: IntentTimelineProvider {
         print("WordOfTheDayWidgetProvider: getTimeline")
         
         let currentDate = Date()
-        let startOfCurrentDate = calendar.startOfDay(for: currentDate)
-        guard let refreshDate = calendar.date(byAdding: .hour, value: 4, to: startOfCurrentDate) else { return }
+        guard let refreshDate = calendar.date(byAdding: .hour, value: 4, to: currentDate) else { return }
         
         API.getWordOfTheDay(for: currentDate) { result in
             var entry: ViewModel

@@ -5,6 +5,7 @@
 //  Created by Kyle Dold on 04/02/2021.
 //
 
+import AVFoundation
 import NetworkKit
 import SwiftUI
 import WidgetKit
@@ -17,6 +18,7 @@ class WordOfTheDayViewModel: ObservableObject {
     let originText = LocalizedStringKey("word_of_the_day.origin")
     
     @Published var word = ""
+    @Published var partOfSpeech = ""
     @Published var wordDescription = ""
     @Published var wordExample = ""
     @Published var origin = ""
@@ -35,6 +37,7 @@ class WordOfTheDayViewModel: ObservableObject {
                 }
                 
                 self.word = wordOfTheDayResponse.word  ?? ""
+                self.partOfSpeech = wordOfTheDayResponse.definitions?.first?.partOfSpeech ?? ""
                 self.wordDescription = wordOfTheDayResponse.definitions?.first?.text ?? ""
                 self.wordExample = wordOfTheDayResponse.examples?.first?.text ?? ""
                 self.origin = wordOfTheDayResponse.note  ?? ""
@@ -44,6 +47,24 @@ class WordOfTheDayViewModel: ObservableObject {
             }
         }
     }
+    
+    func audioButtonTapped() {
+        print("WordOfTheDayViewModel: audioButtonTapped")
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch let error as NSError {
+            print("WordOfTheDayViewModel AVAudioSession error: \(error.localizedDescription)")
+        }
+        
+        let utterance = AVSpeechUtterance(string: word)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
+        
     
     private func refreshWidget() {
         print("WordOfTheDayViewModel: refreshWidget")

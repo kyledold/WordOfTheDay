@@ -57,6 +57,7 @@
 		D1D5029225B2061A00F5EE51 /* WordOfTheDayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */; };
 		D1D5029D25B2066700F5EE51 /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */; };
 		D1D502AA25B3502100F5EE51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1D502A925B3502100F5EE51 /* Localizable.strings */; };
+		D1FB55EA25F0CDE500F87AC4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FB55E925F0CDE500F87AC4 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +196,7 @@
 		D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayEntryView.swift; sourceTree = "<group>"; };
 		D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
 		D1D502A925B3502100F5EE51 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D1FB55E925F0CDE500F87AC4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FB55EA25F0CDE500F87AC4 /* AVFoundation.framework in Frameworks */,
 				D168470D25CACC6E002BDC3F /* NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +439,7 @@
 		D1D501F625B1FF8A00F5EE51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1FB55E925F0CDE500F87AC4 /* AVFoundation.framework */,
 				D168479A25CAF846002BDC3F /* NetworkKit.framework */,
 				D168471425CACCBC002BDC3F /* NetworkKit.framework */,
 				D11F4B8925BD99A1009F8950 /* NetworkKit.framework */,
@@ -733,7 +737,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"WordOfTheDayWatchApp Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				ENABLE_PREVIEWS = YES;
@@ -743,7 +747,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -759,7 +763,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"WordOfTheDayWatchApp Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				ENABLE_PREVIEWS = YES;
@@ -769,7 +773,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -787,11 +791,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				IBSC_MODULE = WordOfTheDayWatchApp_Extension;
 				INFOPLIST_FILE = WordOfTheDayWatchApp/Resources/Info.plist;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -809,11 +813,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				IBSC_MODULE = WordOfTheDayWatchApp_Extension;
 				INFOPLIST_FILE = WordOfTheDayWatchApp/Resources/Info.plist;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -947,7 +951,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"WordOfTheDay/Preview Content\"";
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				ENABLE_PREVIEWS = YES;
@@ -957,7 +961,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -972,7 +976,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"WordOfTheDay/Preview Content\"";
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				ENABLE_PREVIEWS = YES;
@@ -982,7 +986,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -996,7 +1000,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				INFOPLIST_FILE = WordOfTheDayWidget/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1005,7 +1009,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.WordOfTheDayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1020,7 +1024,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				INFOPLIST_FILE = WordOfTheDayWidget/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1029,7 +1033,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.WordOfTheDayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

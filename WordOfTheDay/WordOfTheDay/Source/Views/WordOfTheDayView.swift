@@ -17,34 +17,9 @@ struct WordOfTheDayView: View {
             if viewModel.word == "" {
                 ProgressView()
             } else {
-                VStack(alignment: .leading, spacing: 20) {
+                
+                wordInformationView
                     
-                    Text(viewModel.word)
-                        .modifier(TitleStyle())
-                    
-                    VStack(alignment: .leading) {
-                        Text(viewModel.definitionText)
-                            .modifier(SubTitleStyle())
-                        Text(viewModel.wordDescription)
-                            .modifier(BodyStyle())
-                    }
-                    
-                    VStack(alignment: .leading) {
-                        Text(viewModel.exampleText)
-                            .modifier(SubTitleStyle())
-                        Text(viewModel.wordExample)
-                            .modifier(BodyStyle())
-                    }
-                    
-                    VStack(alignment: .leading) {
-                        Text(viewModel.originText)
-                            .modifier(SubTitleStyle())
-                        Text(viewModel.origin)
-                            .modifier(BodyStyle())
-                    }
-                    Spacer()
-                }
-                .padding()
                 .navigationBarTitle(Text(viewModel.title), displayMode: .inline)
                 .navigationBarItems(trailing:
                     Button(action: {
@@ -68,6 +43,56 @@ struct WordOfTheDayView: View {
             print("WordOfTheDayView: onAppear")
             viewModel.fetchData()
         }
+    }
+    
+    private var wordInformationView: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            
+            VStack(alignment: .leading) {
+                HStack(alignment: .firstTextBaseline) {
+                    Text(viewModel.word)
+                        .modifier(TitleStyle())
+                    
+                    Button(action: {
+                        viewModel.audioButtonTapped()
+                    }, label: {
+                        Image(systemName: "speaker.2")
+                    })
+                    .disabled(viewModel.word.isEmpty)
+                }
+                if !viewModel.partOfSpeech.isEmpty {
+                    Text(viewModel.partOfSpeech)
+                        .italic()
+                        .modifier(BodyStyle())
+                }
+            }
+            
+            VStack(alignment: .leading) {
+                Text(viewModel.definitionText)
+                    .modifier(SubTitleStyle())
+                
+                Text(viewModel.wordDescription)
+                    .modifier(BodyStyle())
+            }
+            
+            VStack(alignment: .leading) {
+                Text(viewModel.exampleText)
+                    .modifier(SubTitleStyle())
+                
+                Text(viewModel.wordExample)
+                    .modifier(BodyStyle())
+            }
+            
+            VStack(alignment: .leading) {
+                Text(viewModel.originText)
+                    .modifier(SubTitleStyle())
+                
+                Text(viewModel.origin)
+                    .modifier(BodyStyle())
+            }
+            Spacer()
+        }
+        .padding()
     }
 }
 
