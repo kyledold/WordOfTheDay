@@ -57,6 +57,7 @@
 		D1D5029225B2061A00F5EE51 /* WordOfTheDayWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */; };
 		D1D5029D25B2066700F5EE51 /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */; };
 		D1D502AA25B3502100F5EE51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1D502A925B3502100F5EE51 /* Localizable.strings */; };
+		D1FB55EA25F0CDE500F87AC4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FB55E925F0CDE500F87AC4 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +196,7 @@
 		D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayEntryView.swift; sourceTree = "<group>"; };
 		D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
 		D1D502A925B3502100F5EE51 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D1FB55E925F0CDE500F87AC4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FB55EA25F0CDE500F87AC4 /* AVFoundation.framework in Frameworks */,
 				D168470D25CACC6E002BDC3F /* NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +439,7 @@
 		D1D501F625B1FF8A00F5EE51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1FB55E925F0CDE500F87AC4 /* AVFoundation.framework */,
 				D168479A25CAF846002BDC3F /* NetworkKit.framework */,
 				D168471425CACCBC002BDC3F /* NetworkKit.framework */,
 				D11F4B8925BD99A1009F8950 /* NetworkKit.framework */,
