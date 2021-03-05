@@ -58,6 +58,7 @@
 		D1D5029D25B2066700F5EE51 /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */; };
 		D1D502AA25B3502100F5EE51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1D502A925B3502100F5EE51 /* Localizable.strings */; };
 		D1FB55EA25F0CDE500F87AC4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FB55E925F0CDE500F87AC4 /* AVFoundation.framework */; };
+		D1FB560C25F25A9E00F87AC4 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB560225F2592300F87AC4 /* DateFormatterExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +198,7 @@
 		D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
 		D1D502A925B3502100F5EE51 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D1FB55E925F0CDE500F87AC4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D1FB560225F2592300F87AC4 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +467,7 @@
 				D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */,
 				D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */,
 				D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */,
+				D1FB55FF25F2590800F87AC4 /* Extensions */,
 				D102301525B6004200C1AD0C /* Modifiers */,
 			);
 			path = Source;
@@ -479,6 +482,14 @@
 				D1D502A925B3502100F5EE51 /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D1FB55FF25F2590800F87AC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D1FB560225F2592300F87AC4 /* DateFormatterExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -690,6 +701,7 @@
 			files = (
 				D1D5029225B2061A00F5EE51 /* WordOfTheDayWidgetProvider.swift in Sources */,
 				D102304B25B603D800C1AD0C /* SubTitleStyle.swift in Sources */,
+				D1FB560C25F25A9E00F87AC4 /* DateFormatterExtension.swift in Sources */,
 				D168483725CB13E5002BDC3F /* WordOfTheDayWidget.intentdefinition in Sources */,
 				D1D5026E25B2051F00F5EE51 /* WordOfTheDayWidget.swift in Sources */,
 				D1D5028D25B2061700F5EE51 /* WordOfTheDayEntryView.swift in Sources */,

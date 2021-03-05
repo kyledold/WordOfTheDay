@@ -12,10 +12,11 @@ struct WordOfTheDayWidgetEntryView: View {
     
     @Environment(\.widgetFamily) var widgetFamily
     @ObservedObject var viewModel: WordOfTheDayViewModel
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            if viewModel.word == "" {
+            
+            if viewModel.word.isEmpty {
                 Text(viewModel.errorText)
                     .modifier(BodyStyle())
             } else {
@@ -43,6 +44,12 @@ struct WordOfTheDayWidgetEntryView: View {
                             .modifier(BodyStyle())
                     }
                 }
+                
+                #if DEBUG
+                Text(DateFormatter.defaultDateFormatter.string(from: viewModel.date))
+                    .modifier(SubTitleStyle())
+                #endif
+                
                 Spacer()
             }
         }.padding()
