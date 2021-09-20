@@ -51,12 +51,14 @@ struct WordOfTheDayView: View {
             VStack(alignment: .leading) {
                 HStack(alignment: .firstTextBaseline) {
                     Text(viewModel.word)
+                        .accessibility(label: Text(viewModel.wordOfTheDayAccessibilityLabel ?? ""))
                         .modifier(TitleStyle())
                     
                     Button(action: {
                         viewModel.audioButtonTapped()
                     }, label: {
                         Image(systemName: "speaker.2")
+                            .accessibility(label: Text(viewModel.audioButtonAccessibilityLabel))
                     })
                     .disabled(viewModel.word.isEmpty)
                 }
@@ -64,6 +66,7 @@ struct WordOfTheDayView: View {
                     Text(viewModel.partOfSpeech)
                         .italic()
                         .modifier(BodyStyle())
+                        .accessibility(label: Text(viewModel.partOfSpeechAccessibilityLabel ?? ""))
                 }
             }
             
@@ -74,6 +77,8 @@ struct WordOfTheDayView: View {
                 Text(viewModel.wordDescription)
                     .modifier(BodyStyle())
             }
+            .accessibilityElement(children: .combine)
+            .accessibility(label: Text(viewModel.definitionAccessibilityLabel ?? ""))
             
             VStack(alignment: .leading) {
                 Text(viewModel.exampleText)
@@ -82,6 +87,8 @@ struct WordOfTheDayView: View {
                 Text(viewModel.wordExample)
                     .modifier(BodyStyle())
             }
+            .accessibilityElement(children: .combine)
+            .accessibility(label: Text(viewModel.exampleAccessibilityLabel ?? ""))
             
             VStack(alignment: .leading) {
                 Text(viewModel.originText)
@@ -90,6 +97,9 @@ struct WordOfTheDayView: View {
                 Text(viewModel.origin)
                     .modifier(BodyStyle())
             }
+            .accessibilityElement(children: .combine)
+            .accessibility(label: Text(viewModel.originAccessibilityLabel ?? ""))
+            
             Spacer()
         }
         .padding()

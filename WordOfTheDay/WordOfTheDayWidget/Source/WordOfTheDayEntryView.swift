@@ -12,15 +12,17 @@ struct WordOfTheDayWidgetEntryView: View {
     
     @Environment(\.widgetFamily) var widgetFamily
     @ObservedObject var viewModel: WordOfTheDayViewModel
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            if viewModel.word == "" {
+            
+            if viewModel.word.isEmpty {
                 Text(viewModel.errorText)
                     .modifier(BodyStyle())
             } else {
                 Text(viewModel.word)
                     .modifier(TitleStyle())
+                    .accessibility(label: Text(viewModel.wordOfTheDayAccessibilityLabel ?? ""))
                 
                 VStack(alignment: .leading) {
                     Text(viewModel.definitionText)
@@ -28,6 +30,8 @@ struct WordOfTheDayWidgetEntryView: View {
                     Text(viewModel.wordDescription)
                         .modifier(BodyStyle())
                 }
+                .accessibilityElement(children: .combine)
+                .accessibility(label: Text(viewModel.definitionAccessibilityLabel ?? ""))
                 
                 if case .systemLarge = widgetFamily {
                     VStack(alignment: .leading) {
@@ -36,13 +40,24 @@ struct WordOfTheDayWidgetEntryView: View {
                         Text(viewModel.wordExample)
                             .modifier(BodyStyle())
                     }
+                    .accessibilityElement(children: .combine)
+                    .accessibility(label: Text(viewModel.exampleAccessibilityLabel ?? ""))
+                    
                     VStack(alignment: .leading) {
                         Text(viewModel.originText)
                             .modifier(SubTitleStyle())
                         Text(viewModel.origin)
                             .modifier(BodyStyle())
                     }
+                    .accessibilityElement(children: .combine)
+                    .accessibility(label: Text(viewModel.originAccessibilityLabel ?? ""))
                 }
+                
+                #if DEBUG
+                Text(DateFormatter.defaultDateFormatter.string(from: viewModel.date))
+                    .modifier(SubTitleStyle())
+                #endif
+                
                 Spacer()
             }
         }.padding()

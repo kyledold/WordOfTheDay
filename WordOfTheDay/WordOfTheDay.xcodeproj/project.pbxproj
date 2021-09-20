@@ -42,6 +42,8 @@
 		D1732AAC25B74D05009E55E8 /* SubTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */; };
 		D1732AB325B74E18009E55E8 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1732AB225B74E18009E55E8 /* ImageExtension.swift */; };
 		D1932D9F25D19EBD00ED1013 /* FooterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1932D9E25D19EBD00ED1013 /* FooterStyle.swift */; };
+		D1A13F5A26F88AB000E2681C /* LocalizedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A13F5926F88AB000E2681C /* LocalizedStringKey.swift */; };
+		D1A3A50426F882260027A9C9 /* LocalizedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A3A50326F882260027A9C9 /* LocalizedStringKey.swift */; };
 		D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */; };
 		D1B1350D25B0B73E00B75A8B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1350C25B0B73E00B75A8B /* SettingsView.swift */; };
 		D1B1350F25B0B74300B75A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1350E25B0B74300B75A8B /* Assets.xcassets */; };
@@ -58,6 +60,7 @@
 		D1D5029D25B2066700F5EE51 /* WordOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */; };
 		D1D502AA25B3502100F5EE51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1D502A925B3502100F5EE51 /* Localizable.strings */; };
 		D1FB55EA25F0CDE500F87AC4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FB55E925F0CDE500F87AC4 /* AVFoundation.framework */; };
+		D1FB560C25F25A9E00F87AC4 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB560225F2592300F87AC4 /* DateFormatterExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +181,8 @@
 		D1732AAB25B74D04009E55E8 /* SubTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleStyle.swift; sourceTree = "<group>"; };
 		D1732AB225B74E18009E55E8 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		D1932D9E25D19EBD00ED1013 /* FooterStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterStyle.swift; sourceTree = "<group>"; };
+		D1A13F5926F88AB000E2681C /* LocalizedStringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringKey.swift; sourceTree = "<group>"; };
+		D1A3A50326F882260027A9C9 /* LocalizedStringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringKey.swift; sourceTree = "<group>"; };
 		D1B1350725B0B73E00B75A8B /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1350A25B0B73E00B75A8B /* WordOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayApp.swift; sourceTree = "<group>"; };
 		D1B1350C25B0B73E00B75A8B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -197,6 +202,7 @@
 		D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewModel.swift; sourceTree = "<group>"; };
 		D1D502A925B3502100F5EE51 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D1FB55E925F0CDE500F87AC4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D1FB560225F2592300F87AC4 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,6 +438,7 @@
 			children = (
 				D1B1351D25B0B86900B75A8B /* BundleExtension.swift */,
 				D1732AB225B74E18009E55E8 /* ImageExtension.swift */,
+				D1A3A50326F882260027A9C9 /* LocalizedStringKey.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -465,6 +472,7 @@
 				D1D5027D25B2056400F5EE51 /* WordOfTheDayWidgetProvider.swift */,
 				D1D5029925B2063F00F5EE51 /* WordOfTheDayViewModel.swift */,
 				D1D5028725B205B000F5EE51 /* WordOfTheDayEntryView.swift */,
+				D1FB55FF25F2590800F87AC4 /* Extensions */,
 				D102301525B6004200C1AD0C /* Modifiers */,
 			);
 			path = Source;
@@ -479,6 +487,15 @@
 				D1D502A925B3502100F5EE51 /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D1FB55FF25F2590800F87AC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D1FB560225F2592300F87AC4 /* DateFormatterExtension.swift */,
+				D1A13F5926F88AB000E2681C /* LocalizedStringKey.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -676,6 +693,7 @@
 				D1732AB325B74E18009E55E8 /* ImageExtension.swift in Sources */,
 				D138C94225CC062600E67FF6 /* BodyStyle.swift in Sources */,
 				D1B1350D25B0B73E00B75A8B /* SettingsView.swift in Sources */,
+				D1A3A50426F882260027A9C9 /* LocalizedStringKey.swift in Sources */,
 				D1B1350B25B0B73E00B75A8B /* WordOfTheDayApp.swift in Sources */,
 				D1732AAC25B74D05009E55E8 /* SubTitleStyle.swift in Sources */,
 				D1732A9925B747C1009E55E8 /* SettingsViewModel.swift in Sources */,
@@ -690,7 +708,9 @@
 			files = (
 				D1D5029225B2061A00F5EE51 /* WordOfTheDayWidgetProvider.swift in Sources */,
 				D102304B25B603D800C1AD0C /* SubTitleStyle.swift in Sources */,
+				D1FB560C25F25A9E00F87AC4 /* DateFormatterExtension.swift in Sources */,
 				D168483725CB13E5002BDC3F /* WordOfTheDayWidget.intentdefinition in Sources */,
+				D1A13F5A26F88AB000E2681C /* LocalizedStringKey.swift in Sources */,
 				D1D5026E25B2051F00F5EE51 /* WordOfTheDayWidget.swift in Sources */,
 				D1D5028D25B2061700F5EE51 /* WordOfTheDayEntryView.swift in Sources */,
 				D102304F25B603DD00C1AD0C /* BodyStyle.swift in Sources */,
@@ -747,7 +767,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -773,7 +793,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -795,7 +815,7 @@
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				IBSC_MODULE = WordOfTheDayWatchApp_Extension;
 				INFOPLIST_FILE = WordOfTheDayWatchApp/Resources/Info.plist;
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -817,7 +837,7 @@
 				DEVELOPMENT_TEAM = NPHFRGDN5J;
 				IBSC_MODULE = WordOfTheDayWatchApp_Extension;
 				INFOPLIST_FILE = WordOfTheDayWatchApp/Resources/Info.plist;
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -961,7 +981,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -986,7 +1006,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1009,7 +1029,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.WordOfTheDayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1033,7 +1053,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledold.WordOfTheDay.WordOfTheDayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

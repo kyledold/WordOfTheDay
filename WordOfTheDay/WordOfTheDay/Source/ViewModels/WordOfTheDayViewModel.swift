@@ -17,6 +17,13 @@ class WordOfTheDayViewModel: ObservableObject {
     let exampleText = LocalizedStringKey("word_of_the_day.example")
     let originText = LocalizedStringKey("word_of_the_day.origin")
     
+    var definitionAccessibilityLabel: String?
+    var exampleAccessibilityLabel: String?
+    var originAccessibilityLabel: String?
+    var wordOfTheDayAccessibilityLabel: LocalizedStringKey?
+    var partOfSpeechAccessibilityLabel: LocalizedStringKey?
+    let audioButtonAccessibilityLabel = LocalizedStringKey("word_of_the_day.audio.button.accessibility_label")
+    
     @Published var word = ""
     @Published var partOfSpeech = ""
     @Published var wordDescription = ""
@@ -42,6 +49,8 @@ class WordOfTheDayViewModel: ObservableObject {
                 self.wordExample = wordOfTheDayResponse.examples?.first?.text ?? ""
                 self.origin = wordOfTheDayResponse.note  ?? ""
                 
+                self.setupAccessibilityLabels()
+                
             case .failure:
                 break
             }
@@ -64,7 +73,17 @@ class WordOfTheDayViewModel: ObservableObject {
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(utterance)
     }
+    
+    private func setupAccessibilityLabels() {
+        guard !word.isEmpty else { return }
         
+        wordOfTheDayAccessibilityLabel = LocalizedStringKey("word_of_the_day.word.\(word).accessibility_label")
+        partOfSpeechAccessibilityLabel = LocalizedStringKey("word_of_the_day.part_of_speech.\(partOfSpeech).accessibility_label")
+        definitionAccessibilityLabel = "\(definitionText.stringValue()), \(wordDescription)"
+        exampleAccessibilityLabel = "\(exampleText.stringValue()), \(wordExample)"
+        originAccessibilityLabel = "\(originText.stringValue()), \(origin)"
+        
+    }
     
     private func refreshWidget() {
         print("WordOfTheDayViewModel: refreshWidget")
@@ -72,4 +91,3 @@ class WordOfTheDayViewModel: ObservableObject {
         WidgetCenter.shared.reloadAllTimelines()
     }
 }
-
