@@ -46,7 +46,7 @@ struct SettingsView: View {
     
     private func handleTapOnItem(_ item: SettingItem) {
         switch item {
-        case .feedback: openURL(viewModel.feedbackURL)
+        case .feedback: openURL(viewModel.appStoreURL)
         case .openSource: openURL(viewModel.gitHubRepoURL)
         }
     }
