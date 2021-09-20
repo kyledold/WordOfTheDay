@@ -15,7 +15,7 @@ class SettingsViewModel: ObservableObject {
     
     @Published private(set) var items: [SettingItem] = [.feedback, .openSource]
 
-    let feedbackURL = URL(string: "mailto:kdold02@gmail.com")!
+    let appStoreURL = URL(string: "itms-apps://itunes.apple.com/app/id1551946328")!
     let gitHubRepoURL = URL(string: "https://github.com/kyledold/WordOfTheDay")!
 }
 

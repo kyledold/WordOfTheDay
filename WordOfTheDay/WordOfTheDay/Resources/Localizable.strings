@@ -11,7 +11,7 @@
 "settings.close" = "Close";
 "settings.title" = "Settings";
 "settings.feedback.title" = "Feedback";
-"settings.feedback.subtitle" = "kdold02@gmail.com";
+"settings.feedback.subtitle" = "Leave a rating or comment with suggestions";
 "settings.open_source.title" = "Source code";
 "settings.open_source.subtitle" = "Feel free to browse or contribute";
 "word_of_the_day.word.%@.accessibility_label" = "Word of the day is %@";
