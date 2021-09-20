@@ -12,3 +12,4 @@
 "entry_view.example" = "EXAMPLE";
 "entry_view.origin" = "ORIGIN";
 "entry_view.error" = "Error fetching word of the day";
+"%@.accessibility_label" = "Word of the day is %@";
