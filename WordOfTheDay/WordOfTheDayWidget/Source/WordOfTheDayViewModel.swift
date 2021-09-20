@@ -19,6 +19,11 @@ class WordOfTheDayViewModel: ObservableObject, TimelineEntry {
     let originText = LocalizedStringKey("entry_view.origin")
     let errorText = LocalizedStringKey("entry_view.error")
     
+    var wordOfTheDayAccessibilityLabel: LocalizedStringKey?
+    var definitionAccessibilityLabel: LocalizedStringKey?
+    var exampleAccessibilityLabel: LocalizedStringKey?
+    var originAccessibilityLabel: LocalizedStringKey?
+    
     @Published var word = ""
     @Published var wordDescription = ""
     @Published var wordExample = ""
@@ -35,5 +40,16 @@ class WordOfTheDayViewModel: ObservableObject, TimelineEntry {
         self.origin = wordOfTheDay?.note  ?? ""
         self.publishDate = wordOfTheDay?.publishDate?.date ?? Date()
         self.configuration = configuration
+        
+        self.setupAccessibilityLabels()
+    }
+    
+    private func setupAccessibilityLabels() {
+        guard !word.isEmpty else { return }
+        
+        wordOfTheDayAccessibilityLabel = LocalizedStringKey("\(word).accessibility_label")
+        definitionAccessibilityLabel = "\(definitionText.stringValue()), \(wordDescription)"
+        exampleAccessibilityLabel = "\(exampleText.stringValue()), \(wordExample)"
+        originAccessibilityLabel = "\(originText.stringValue()), \(origin)"
     }
 }

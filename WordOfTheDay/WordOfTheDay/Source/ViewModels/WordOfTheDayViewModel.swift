@@ -17,11 +17,11 @@ class WordOfTheDayViewModel: ObservableObject {
     let exampleText = LocalizedStringKey("word_of_the_day.example")
     let originText = LocalizedStringKey("word_of_the_day.origin")
     
+    var definitionAccessibilityLabel: String?
+    var exampleAccessibilityLabel: String?
+    var originAccessibilityLabel: String?
     var wordOfTheDayAccessibilityLabel: LocalizedStringKey?
     var partOfSpeechAccessibilityLabel: LocalizedStringKey?
-    var definitionAccessibilityLabel: String?
-    var exampleAccessibilityLabel: LocalizedStringKey?
-    var originAccessibilityLabel: LocalizedStringKey?
     let audioButtonAccessibilityLabel = LocalizedStringKey("word_of_the_day.audio.button.accessibility_label")
     
     @Published var word = ""
