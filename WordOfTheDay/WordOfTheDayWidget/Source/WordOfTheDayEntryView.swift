@@ -30,6 +30,7 @@ struct WordOfTheDayWidgetEntryView: View {
                     Text(viewModel.wordDescription)
                         .modifier(BodyStyle())
                 }
+                .minimumScaleFactor(0.95)
                 .accessibilityElement(children: .combine)
                 .accessibility(label: Text(viewModel.definitionAccessibilityLabel ?? ""))
                 
@@ -54,8 +55,8 @@ struct WordOfTheDayWidgetEntryView: View {
                 }
                 
                 #if DEBUG
-                Text(DateFormatter.defaultDateFormatter.string(from: viewModel.date))
-                    .modifier(SubTitleStyle())
+                //Text(DateFormatter.defaultDateFormatter.string(from: viewModel.date))
+                //    .modifier(SubTitleStyle())
                 #endif
                 
                 Spacer()
@@ -73,5 +74,6 @@ struct WordOfTheDayWidgetEntryView_Preview: PreviewProvider {
                 configuration: ConfigurationIntent()
             )
         ).previewContext(WidgetPreviewContext(family: .systemMedium))
+        .environment(\.sizeCategory, .extraExtraExtraLarge)
     }
 }
