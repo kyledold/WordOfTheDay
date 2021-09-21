@@ -13,7 +13,6 @@ struct SubTitleStyle: ViewModifier {
         content
             .font(.footnote)
             .foregroundColor(.secondary)
-            .lineLimit(1)
     }
 }
 

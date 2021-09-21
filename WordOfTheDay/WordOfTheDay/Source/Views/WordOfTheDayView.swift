@@ -17,22 +17,22 @@ struct WordOfTheDayView: View {
             if viewModel.word == "" {
                 ProgressView()
             } else {
-                
-                wordInformationView
-                    
-                .navigationBarTitle(Text(viewModel.title), displayMode: .inline)
-                .navigationBarItems(trailing:
-                    Button(action: {
-                        self.showingSettings.toggle()
-                    }) {
-                        Image("Settings")
-                            .resizable()
-                            .frame(width: 34, height: 34)
-                            .colorMultiply(.accentColor)
-                    }.sheet(isPresented: $showingSettings, content: {
-                        SettingsView(viewModel: .init(), showingSettings: self.$showingSettings)
-                    })
-                )
+                ScrollView {
+                    wordInformationView
+                        .navigationBarTitle(Text(viewModel.title), displayMode: .inline)
+                        .navigationBarItems(trailing:
+                            Button(action: {
+                                self.showingSettings.toggle()
+                            }) {
+                                Image("Settings")
+                                    .resizable()
+                                    .frame(width: 34, height: 34)
+                                    .colorMultiply(.accentColor)
+                            }.sheet(isPresented: $showingSettings, content: {
+                                SettingsView(viewModel: .init(), showingSettings: self.$showingSettings)
+                            })
+                        )
+                }
             }
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in

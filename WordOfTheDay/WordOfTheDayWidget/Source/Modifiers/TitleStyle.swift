@@ -13,9 +13,9 @@ public struct TitleStyle: ViewModifier {
         content
             .font(.title)
             .foregroundColor(.primary)
-            .minimumScaleFactor(0.1)
-            .lineLimit(1)
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(height: 15, alignment: .leading)
+            .minimumScaleFactor(0.8)
+            .fixedSize()
     }
     
     public init() {}
