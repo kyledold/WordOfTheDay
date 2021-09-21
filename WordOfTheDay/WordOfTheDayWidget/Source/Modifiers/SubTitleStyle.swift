@@ -13,7 +13,8 @@ public struct SubTitleStyle: ViewModifier {
         content
             .font(.footnote)
             .foregroundColor(.secondary)
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(height: 15, alignment: .leading)
+            .minimumScaleFactor(0.1)
     }
     
     public init() {}
