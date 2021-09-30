@@ -6,14 +6,15 @@
 //
 
 public struct DefinitionDTO: Decodable {
-    public let source: String
-    public let text: String
+    
+    public let source: String?
+    public let text: String?
     public let note: String?
     public let partOfSpeech: String?
     
     public init(
-        source: String,
-        text: String,
+        source: String?,
+        text: String?,
         note: String?,
         partOfSpeech: String?
     ) {

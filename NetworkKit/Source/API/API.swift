@@ -9,8 +9,6 @@ import Alamofire
 import Foundation
 
 public struct API {
-
-    // MARK: - Public Methods
     
     public static func getWordOfTheDay(for date: Date, completion: @escaping(_ result: Result<WordOfTheDayDTO, Error>) -> Void) {
         
@@ -28,6 +26,8 @@ public struct API {
         }
     }
 }
+
+// MARK: - Error -
 
 public enum ServiceError: Error {
     case badUrl

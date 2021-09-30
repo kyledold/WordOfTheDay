@@ -9,12 +9,12 @@ public struct ExampleDTO: Decodable {
     
     public let title: String?
     public let text: String?
-    public let id: Int
+    public let id: Int?
     
     public init(
-        title: String,
+        title: String?,
         text: String?,
-        id: Int
+        id: Int?
     ) {
         self.title = title
         self.text = text
