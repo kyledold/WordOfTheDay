@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D006ED7F2C37CB1400B7E388 /* ImageAssetConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006ED7E2C37CB1400B7E388 /* ImageAssetConstant.swift */; };
+		D006ED812C37CC4400B7E388 /* LocalizedStringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006ED802C37CC4400B7E388 /* LocalizedStringConstant.swift */; };
 		D102304B25B603D800C1AD0C /* SubTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102301625B6005700C1AD0C /* SubTitleStyle.swift */; };
 		D102304D25B603DB00C1AD0C /* TitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102300C25B6003400C1AD0C /* TitleStyle.swift */; };
 		D102304F25B603DD00C1AD0C /* BodyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102301B25B6008300C1AD0C /* BodyStyle.swift */; };
@@ -148,6 +149,7 @@
 
 /* Begin PBXFileReference section */
 		D006ED7E2C37CB1400B7E388 /* ImageAssetConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssetConstant.swift; sourceTree = "<group>"; };
+		D006ED802C37CC4400B7E388 /* LocalizedStringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringConstant.swift; sourceTree = "<group>"; };
 		D102300C25B6003400C1AD0C /* TitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleStyle.swift; sourceTree = "<group>"; };
 		D102301625B6005700C1AD0C /* SubTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleStyle.swift; sourceTree = "<group>"; };
 		D102301B25B6008300C1AD0C /* BodyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyStyle.swift; sourceTree = "<group>"; };
@@ -442,6 +444,7 @@
 				D1732AB225B74E18009E55E8 /* ImageExtension.swift */,
 				D1A3A50326F882260027A9C9 /* LocalizedStringKey.swift */,
 				D006ED7E2C37CB1400B7E388 /* ImageAssetConstant.swift */,
+				D006ED802C37CC4400B7E388 /* LocalizedStringConstant.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D006ED812C37CC4400B7E388 /* LocalizedStringConstant.swift in Sources */,
 				D138C93A25CC055D00E67FF6 /* WordOfTheDayView.swift in Sources */,
 				D1732AA425B74B22009E55E8 /* SettingRow.swift in Sources */,
 				D168483625CB13E5002BDC3F /* WordOfTheDayWidget.intentdefinition in Sources */,
