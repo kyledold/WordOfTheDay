@@ -24,7 +24,7 @@ struct WordOfTheDayView: View {
                             Button(action: {
                                 self.showingSettings.toggle()
                             }) {
-                                Image("Settings")
+                                Image(ImageAssetConstant.settings)
                                     .resizable()
                                     .frame(width: 34, height: 34)
                                     .colorMultiply(.accentColor)
